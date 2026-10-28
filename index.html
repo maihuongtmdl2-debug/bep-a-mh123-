@@ -1,0 +1,4530 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bếp Á Đông – Kho Tàng Ẩm Thực Á Đông &amp; Công Thức Chuẩn Vị</title>
+  <meta name="description" content="Cẩm nang tra cứu công thức nấu ăn các món Á trực quan, dễ làm theo từng bước. Tìm món theo nguyên liệu tủ lạnh trong 10 giây, quy đổi khẩu phần, hẹn giờ nấu ăn và tạo giỏ đi chợ thông minh." />
+  <meta name="keywords" content="ẩm thực Á Đông, công thức nấu ăn, món Việt, món Nhật, món Hàn, món Thái, món Hoa, Bếp Á Đông" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+/* ==========================================================================
+   KHO TÀNG ẨM THỰC Á ĐÔNG (ASIAN CULINARY HUB) - BẾP Á ĐÔNG
+   Bảng màu chuẩn ẩm thực, Mobile-First, Chế độ Vào Bếp & Định dạng In A4
+   ========================================================================== */
+
+:root {
+  --color-primary: #C84B31;
+  --color-primary-dark: #A3361F;
+  --color-primary-light: #FCECE8;
+  --color-secondary: #D97706;
+  --color-secondary-light: #FEF3C7;
+  --color-accent: #2D6A4F;
+  --color-accent-light: #E6F4EA;
+  --color-bg: #FAF6F0;
+  --color-bg-alt: #F3ECE1;
+  --color-surface: #FFFFFF;
+  --color-text: #1F1A17;
+  --color-text-muted: #6B5E53;
+  --color-border: #E6DEC8;
+  --color-danger: #DC2626;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow-sm: 0 2px 8px rgba(31, 26, 23, 0.06);
+  --shadow-md: 0 8px 24px rgba(31, 26, 23, 0.10);
+  --shadow-lg: 0 16px 40px rgba(31, 26, 23, 0.16);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  --base-font-size: 16px;
+}
+
+html {
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html[data-font-scale="lg"] {
+  --base-font-size: 18px;
+}
+
+html[data-font-scale="xl"] {
+  --base-font-size: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .serif-heading {
+  font-family: var(--font-heading);
+  line-height: 1.28;
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mọi nút bấm tối thiểu 44x44px chuẩn Mobile-First khi đang đứng bếp */
+button, .btn, .chip-btn, .nav-link, input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+button, .btn, .chip-btn {
+  min-height: 44px;
+  min-width: 44px;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Sticky Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 246, 240, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: block;
+}
+
+.brand-tagline {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  display: block;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-font-scale {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: 0 0.85rem;
+  border: 1px solid var(--color-border);
+  font-weight: 700;
+}
+
+.btn-font-scale:hover {
+  background: var(--color-secondary-light);
+  border-color: var(--color-secondary);
+}
+
+.btn-fav-header {
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 0 0.85rem;
+  border: 1px solid var(--color-border);
+}
+
+.btn-fav-header.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-cart-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0 1rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-cart-header:hover {
+  background: var(--color-primary-dark);
+}
+
+.badge-count {
+  background: var(--color-secondary);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  padding: 0 0.75rem;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  padding: 3rem 0 2.75rem;
+  background:
+    linear-gradient(135deg, rgba(31, 26, 23, 0.84) 0%, rgba(124, 45, 18, 0.76) 55%, rgba(45, 106, 79, 0.78) 100%),
+    url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #FFFFFF;
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+.hero-content {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(217, 119, 6, 0.28);
+  border: 1px solid rgba(254, 243, 199, 0.45);
+  color: #FEF3C7;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  color: #FFFFFF;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  margin-bottom: 0.85rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-subtitle {
+  color: #F3ECE1;
+  font-size: 1.08rem;
+  max-width: 680px;
+  margin: 0 auto 1.75rem;
+}
+
+/* Thanh tìm kiếm thông minh cỡ lớn */
+.hero-search-box {
+  background: var(--color-surface);
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 780px;
+  margin: 0 auto 1.35rem;
+  border: 2px solid var(--color-secondary);
+}
+
+.search-icon {
+  font-size: 1.35rem;
+  padding-left: 0.75rem;
+  color: var(--color-primary);
+}
+
+.hero-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.75rem 0.5rem;
+  font-size: 1.05rem;
+  color: var(--color-text);
+  min-width: 0;
+}
+
+.hero-search-input:focus {
+  outline: none;
+}
+
+.btn-clear-search {
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  padding: 0 0.75rem;
+  font-size: 0.88rem;
+}
+
+.btn-hero-search {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0 1.35rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+}
+
+.btn-hero-search:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Hàng thẻ gợi ý nhanh (Quick Chips) */
+.quick-chips-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.quick-chip {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.quick-chip:hover, .quick-chip.active {
+  background: var(--color-secondary);
+  border-color: #FEF3C7;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.hero-cta-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-primary-cta {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary-cta:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-cta {
+  background: var(--color-accent);
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary-cta:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+/* Section Layout */
+.section-block {
+  padding: 3.25rem 0;
+}
+
+.section-block.alt-bg {
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.55rem, 2.6vw, 2.2rem);
+  color: var(--color-text);
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+/* Bộ lọc kết hợp (Filter Bar) */
+.filter-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.75rem;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.filter-select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.filter-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.result-count-text {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.btn-reset-filter {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: 0 1rem;
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.btn-reset-filter:hover {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+/* Danh sách thẻ món ăn (Recipe Grid) */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-media {
+  position: relative;
+  height: 215px;
+  background: var(--color-bg-alt);
+  overflow: hidden;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.recipe-card:hover .card-media img {
+  transform: scale(1.04);
+}
+
+.card-badges-top {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.country-badge {
+  background: rgba(31, 26, 23, 0.82);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.btn-fav-card {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-text-muted);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  font-size: 1.15rem;
+}
+
+.btn-fav-card.active {
+  color: var(--color-primary);
+  background: #FFF;
+}
+
+.photo-source-label {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.6rem;
+  background: rgba(31, 26, 23, 0.68);
+  color: #FAF6F0;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.veg-badge {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.6rem;
+  background: var(--color-accent);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+}
+
+.card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-category-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+  font-size: 0.8rem;
+}
+
+.category-tag {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 0.18rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.source-status-tag {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.card-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  background: var(--color-bg);
+  padding: 0.65rem;
+  border-radius: var(--radius-sm);
+  margin-top: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+.meta-item strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.meta-item span {
+  color: var(--color-text-muted);
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.6rem;
+}
+
+.btn-view-recipe {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0 1rem;
+}
+
+.btn-view-recipe:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-add-cart-card {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 0 0.9rem;
+}
+
+.btn-add-cart-card:hover {
+  background: var(--color-accent);
+  color: #FFFFFF;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-border);
+}
+
+/* Khu vực Bí quyết nhà bếp & Bảng quy đổi */
+.tips-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.75rem;
+}
+
+.panel-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.conversion-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.conversion-table th, .conversion-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.conversion-table th {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.quick-converter-box {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.converter-controls {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr auto;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  align-items: center;
+}
+
+.spice-tips-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.spice-tip-item {
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  border-left: 4px solid var(--color-secondary);
+}
+
+.spice-tip-item h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.spice-tip-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Thực đơn gợi ý & Giỏ đi chợ tổng hợp */
+.planner-cart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 1.75rem;
+}
+
+.cart-custom-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.cart-custom-input {
+  flex: 1;
+  min-width: 180px;
+  min-height: 44px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.cart-items-container {
+  max-height: 380px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  background: var(--color-bg);
+  margin-bottom: 1rem;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cart-item-row:last-child {
+  border-bottom: none;
+}
+
+.cart-item-row.checked .cart-item-label {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+.cart-item-label {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.cart-item-label input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.cart-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Góc Tác Giả & Gửi công thức */
+.author-submit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 1.75rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  font-size: 0.92rem;
+}
+
+.form-control {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+/* Modal Chi tiết Công thức */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(31, 26, 23, 0.72);
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.recipe-modal-dialog {
+  background: var(--color-surface);
+  width: 100%;
+  max-width: 960px;
+  max-height: 92vh;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  position: relative;
+}
+
+.modal-sticky-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  padding: 0.85rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.modal-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-cooking-mode {
+  background: var(--color-secondary);
+  color: #FFFFFF;
+  padding: 0 1rem;
+}
+
+.btn-print-recipe {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 0 0.95rem;
+}
+
+.btn-close-modal {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 0 0.9rem;
+  font-weight: 700;
+}
+
+.modal-body-content {
+  padding: 1.5rem;
+}
+
+.modal-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.modal-dish-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+/* Bộ điều chỉnh khẩu phần (Portion Scaler) */
+.portion-scaler-box {
+  background: var(--color-bg);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.scaler-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.btn-scaler {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+.servings-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  min-width: 85px;
+  text-align: center;
+}
+
+.recipe-detail-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 1.75rem;
+}
+
+.ingredient-group-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin: 1rem 0 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.ingredient-check-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border-bottom: 1px dashed var(--color-border);
+  cursor: pointer;
+}
+
+.ingredient-check-item:hover {
+  background: var(--color-bg);
+}
+
+.ingredient-check-item.have-at-home {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.ingredient-check-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ingredient-check-left input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--color-accent);
+}
+
+.ingredient-amount-badge {
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+/* Quy trình từng bước + Đồng hồ hẹn giờ */
+.step-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-left: 5px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.step-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.step-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+}
+
+.timer-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  background: var(--color-surface);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-secondary);
+}
+
+.timer-display {
+  font-family: monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+  min-width: 64px;
+  text-align: center;
+}
+
+.btn-timer-start {
+  background: var(--color-secondary);
+  color: #FFFFFF;
+  padding: 0 0.85rem;
+  min-height: 38px;
+  font-size: 0.9rem;
+}
+
+.btn-timer-reset {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: 0 0.7rem;
+  min-height: 38px;
+  font-size: 0.85rem;
+}
+
+.chef-tips-box {
+  background: var(--color-secondary-light);
+  border-left: 5px solid var(--color-secondary);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  margin-top: 1.25rem;
+}
+
+.nutrition-box {
+  background: var(--color-accent-light);
+  border-left: 5px solid var(--color-accent);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  margin-top: 0.85rem;
+}
+
+/* Chế độ Vào Bếp Toàn Màn Hình (Cooking Mode) */
+.cooking-mode-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: #181310;
+  color: #FAF6F0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.cooking-mode-overlay.open {
+  display: flex;
+}
+
+.cooking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.cooking-title {
+  color: #FEF3C7;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.cooking-stage {
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.cooking-step-indicator {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.cooking-step-heading {
+  color: #FFFFFF;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  margin-bottom: 1.25rem;
+}
+
+.cooking-step-body {
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+  line-height: 1.75;
+  color: #F3ECE1;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.cooking-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-cooking-nav {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  padding: 0.85rem 1.75rem;
+  font-size: 1.1rem;
+  border-radius: var(--radius-md);
+}
+
+.btn-cooking-nav:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Toast Notification */
+.toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 360px;
+}
+
+.toast-item {
+  background: #1F1A17;
+  color: #FFFFFF;
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--color-secondary);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.92rem;
+  animation: slideInUp 0.25s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.site-footer {
+  background: #1F1A17;
+  color: #E6DEC8;
+  padding: 3rem 0 2rem;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-title {
+  color: #FEF3C7;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(230, 222, 200, 0.16);
+  padding-top: 1.25rem;
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 960px) {
+  .tips-layout,
+  .planner-cart-grid,
+  .author-submit-grid,
+  .modal-hero-grid,
+  .recipe-detail-columns,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+  .main-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .main-nav.open {
+    display: flex;
+  }
+  .hero-search-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-icon {
+    display: none;
+  }
+  .converter-controls,
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Chế độ In công thức / Xuất PDF sạch đẹp trên 1 trang A4 */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+  .site-header,
+  .hero-section,
+  .filter-panel,
+  #recipes-section,
+  #kitchen-tips-section,
+  #submit-recipe-section,
+  .site-footer,
+  .modal-sticky-bar,
+  .cooking-mode-overlay,
+  .toast-container,
+  .no-print,
+  .timer-widget button,
+  .btn-scaler {
+    display: none !important;
+  }
+  .modal-backdrop {
+    position: static !important;
+    display: block !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+  .recipe-modal-dialog {
+    max-width: 100% !important;
+    max-height: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    overflow: visible !important;
+  }
+  .modal-dish-img {
+    height: 150px !important;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- THANH ĐIỀU HƯỚNG DÍNH TRÊN CÙNG (STICKY HEADER) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero-section" class="brand-logo" aria-label="Trang chủ Bếp Á Đông">
+        <span class="brand-icon" aria-hidden="true">🍲</span>
+        <span>
+          <span class="brand-title js-brand-name">Bếp Á Đông</span>
+          <span class="brand-tagline js-brand-tagline">Tinh hoa vị Á – Ấm lửa cơm nhà</span>
+        </span>
+      </a>
+
+      <button type="button" class="mobile-menu-btn" data-action="toggle-mobile-nav" aria-label="Mở menu điều hướng">
+        ☰ Menu
+      </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Điều hướng chính">
+        <a href="#hero-section" class="nav-link">Trang chủ</a>
+        <a href="#recipes-section" class="nav-link">Khám phá món Á</a>
+        <a href="#kitchen-tips-section" class="nav-link">Bí quyết nhà bếp</a>
+        <a href="#meal-planner-section" class="nav-link">Thực đơn tuần &amp; Giỏ đi chợ</a>
+        <a href="#submit-recipe-section" class="nav-link">Góc tác giả / Gửi công thức</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          id="btn-font-toggle"
+          class="btn-font-scale"
+          data-action="cycle-font-scale"
+          title="Chuyển đổi cỡ chữ lớn dễ đọc khi đứng bếp (A / A+ / A++)"
+        >A (Cỡ chuẩn)</button>
+
+        <button
+          type="button"
+          id="btn-fav-filter"
+          class="btn-fav-header"
+          data-action="toggle-fav-filter"
+          title="Xem các món ăn yêu thích đã lưu"
+        >
+          ❤️ <span id="fav-count-badge" class="badge-count">0</span>
+        </button>
+
+        <button
+          type="button"
+          class="btn-cart-header"
+          data-action="open-cart-modal"
+          title="Mở Giỏ Đi Chợ Thông Minh"
+        >
+          🛒 Giỏ đi chợ (<span class="js-cart-count">0</span>)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- MÀN HÌNH ĐẦU TIÊN (HERO SECTION) -->
+    <section id="hero-section" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-eyebrow">
+          <span>✨ Cẩm Nang Ẩm Thực Việt • Nhật • Hàn • Thái • Hoa</span>
+        </div>
+        <h1 class="hero-title serif-heading">Hôm nay ăn gì? Khám phá mâm cơm Á Đông chuẩn vị trong 10 giây</h1>
+        <p class="hero-subtitle">
+          Nhập bất kỳ nguyên liệu nào sẵn có trong tủ lạnh nhà bạn – tự động gợi ý món ngon, tính toán định lượng theo số người ăn và bấm giờ từng bước nấu.
+        </p>
+
+        <div class="hero-search-box" role="search">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="hero-search-input"
+            class="hero-search-input"
+            placeholder="Tủ lạnh nhà bạn đang có gì? (VD: cá, nghệ, thịt ba chỉ, đậu phụ, kim chi...)"
+            aria-label="Tìm kiếm món ăn theo tên hoặc nguyên liệu trong tủ lạnh"
+          />
+          <button type="button" class="btn-clear-search" data-action="clear-search" title="Xóa từ khóa">Xóa</button>
+          <button type="button" class="btn-hero-search" data-action="scroll-to-recipes">Tìm món ngay</button>
+        </div>
+
+        <!-- Hàng thẻ gợi ý nhanh (Quick Chips) -->
+        <div class="quick-chips-wrap" aria-label="Gợi ý nhanh theo nhu cầu">
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="under20">⏱️ Món ngon &lt; 20 phút</button>
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="Việt Nam">🇻🇳 Cơm nhà Việt Nam</button>
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="Nhật Bản">🇯🇵 Thanh đạm Nhật Bản</button>
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="Hàn Quốc">🇰🇷 Cay nồng Hàn Quốc</button>
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="Thái Lan">🇹🇭 Chua cay Thái Lan</button>
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="Trung Hoa">🇨🇳 Đậm đà Trung Hoa</button>
+          <button type="button" class="quick-chip" data-action="quick-chip" data-chip="vegetarian">🌱 Món chay thanh tịnh</button>
+        </div>
+
+        <div class="hero-cta-group">
+          <button type="button" class="btn btn-primary-cta" data-action="scroll-to-recipes">
+            🍛 Khám phá thực đơn hôm nay
+          </button>
+          <button type="button" class="btn btn-secondary-cta" data-action="open-cart-modal">
+            🧺 Mở Giỏ Đi Chợ (<span class="js-cart-count">0</span>)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- KHU VỰC 1: BỘ LỌC & DANH SÁCH MÓN ĂN (RECIPE GRID) -->
+    <section id="recipes-section" class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title serif-heading">Kho Tàng Công Thức Món Á Đặc Sắc</h2>
+            <p class="section-subtitle">Hỗn hợp tìm kiếm tiếng Việt có dấu &amp; không dấu (gõ "ca kho", "dau phu", "tom yum" đều ra kết quả tức thì).</p>
+          </div>
+          <button type="button" class="btn btn-reset-filter" data-action="test-alarm-sound">
+            🔔 Thử chuông hẹn giờ bếp
+          </button>
+        </div>
+
+        <div class="filter-panel" aria-label="Bộ lọc đa điều kiện">
+          <div class="filter-grid">
+            <div class="filter-group">
+              <label for="filter-country">🌏 Quốc gia / Nền ẩm thực</label>
+              <select id="filter-country" class="filter-select">
+                <option value="all">Tất cả quốc gia (5 nền ẩm thực)</option>
+                <option value="Việt Nam">🇻🇳 Việt Nam</option>
+                <option value="Nhật Bản">🇯🇵 Nhật Bản</option>
+                <option value="Hàn Quốc">🇰🇷 Hàn Quốc</option>
+                <option value="Thái Lan">🇹🇭 Thái Lan</option>
+                <option value="Trung Hoa">🇨🇳 Trung Hoa</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-category">🍲 Loại món ăn</label>
+              <select id="filter-category" class="filter-select">
+                <option value="all">Tất cả loại món</option>
+                <option value="Món kho/mặn">Món kho / Món mặn</option>
+                <option value="Canh/Súp">Canh / Súp nóng</option>
+                <option value="Món xào/nướng">Món xào / Áp chảo / Nướng</option>
+                <option value="Món sợi/nước">Món sợi / Nước dùng</option>
+                <option value="Gỏi/Trộn">Gỏi / Cơm trộn</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-time">⏱️ Tổng thời gian nấu</label>
+              <select id="filter-time" class="filter-select">
+                <option value="all">Mọi khung thời gian</option>
+                <option value="under20">Nhanh gọn &le; 20 phút</option>
+                <option value="20to45">Tiêu chuẩn 21 – 45 phút</option>
+                <option value="over45">Món ninh/kho kỹ &gt; 45 phút</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-difficulty">🔥 Độ khó chế biến</label>
+              <select id="filter-difficulty" class="filter-select">
+                <option value="all">Mọi cấp độ</option>
+                <option value="Dễ">Dễ (Người mới bắt đầu)</option>
+                <option value="Trung bình">Trung bình (Cơm gia đình)</option>
+                <option value="Khó">Khó (Món truyền thống cầu kỳ)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-status-bar">
+            <span id="filter-result-count" class="result-count-text">Đang tải danh sách món ăn...</span>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <button type="button" class="btn btn-reset-filter" data-action="reset-filters">🔄 Đặt lại toàn bộ lọc</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="recipe-grid-container" class="recipe-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- KHU VỰC 2: BÍ QUYẾT NHÀ BẾP & BẢNG QUY ĐỔI GIA VỊ -->
+    <section id="kitchen-tips-section" class="section-block alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title serif-heading">Bí Quyết Nhà Bếp &amp; Bảng Quy Đổi Đơn Vị Chuẩn</h2>
+            <p class="section-subtitle">Đong đếm gia vị chuẩn xác như đầu bếp chuyên nghiệp dù không có cân điện tử trong tay.</p>
+          </div>
+        </div>
+
+        <div class="tips-layout">
+          <div class="panel-card">
+            <h3 class="serif-heading" style="font-size:1.35rem;color:var(--color-primary);">🥄 Bảng Quy Đổi Đơn Vị Đo Lường Nhà Bếp</h3>
+            <table class="conversion-table">
+              <thead>
+                <tr>
+                  <th>Đơn vị thông dụng</th>
+                  <th>Quy đổi Thể tích (ml)</th>
+                  <th>Quy đổi Trọng lượng (Gia vị phổ biến)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1 Muỗng canh (Tbsp)</strong></td>
+                  <td>15 ml</td>
+                  <td>~ 15g nước mắm / 12g đường / 14g dầu ăn</td>
+                </tr>
+                <tr>
+                  <td><strong>1 Muỗng cà phê (Tsp)</strong></td>
+                  <td>5 ml (= 1/3 Tbsp)</td>
+                  <td>~ 5g muối hạt / 4g đường / 3g bột năng</td>
+                </tr>
+                <tr>
+                  <td><strong>1 Chén ăn cơm (Cup)</strong></td>
+                  <td>240 ml (= 16 Tbsp)</td>
+                  <td>~ 200g gạo tẻ / 240ml nước dùng</td>
+                </tr>
+                <tr>
+                  <td><strong>1 Lạng (Việt Nam)</strong></td>
+                  <td>—</td>
+                  <td>100 gram (g) = 0.1 kg</td>
+                </tr>
+                <tr>
+                  <td><strong>1 Củ gừng / nghệ vừa</strong></td>
+                  <td>~ 2 Tbsp nước cốt</td>
+                  <td>~ 35g – 45g sau khi cạo vỏ</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Công cụ tính nhanh quy đổi trực tiếp -->
+            <div class="quick-converter-box">
+              <strong style="color:var(--color-accent);display:block;">⚡ Máy tính quy đổi nhanh khi đang nấu:</strong>
+              <div class="converter-controls">
+                <input
+                  type="number"
+                  id="converter-amount"
+                  class="form-control"
+                  value="2"
+                  min="0.5"
+                  step="0.5"
+                  aria-label="Nhập số lượng cần quy đổi"
+                />
+                <select id="converter-type" class="filter-select" aria-label="Chọn loại quy đổi">
+                  <option value="tbsp_to_ml">Muỗng canh (Tbsp) ➔ ml &amp; Tsp</option>
+                  <option value="tsp_to_ml">Muỗng cà phê (Tsp) ➔ ml</option>
+                  <option value="cup_to_ml">Chén (Cup) ➔ ml &amp; Tbsp</option>
+                  <option value="lang_to_gram">Lạng Việt Nam ➔ Gram (g)</option>
+                </select>
+                <span id="converter-result" style="font-weight:700;color:var(--color-primary);">2 Tbsp = 30 ml</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <h3 class="serif-heading" style="font-size:1.35rem;color:var(--color-accent);">🌿 Mẹo Sơ Chế &amp; Bảo Quản Gia Vị Đặc Trưng Á Đông</h3>
+            <div class="spice-tips-list">
+              <div class="spice-tip-item">
+                <h4>1. Sả, Gừng, Nghệ tươi &amp; Riềng</h4>
+                <p>Rửa sạch, để thật khô vỏ rồi bọc giấy báo/khăn giấy bỏ vào túi zip ngăn mát giữ tươi 2–3 tuần. Với nghệ và riềng giã sẵn, có thể chia từng viên nhỏ cấp đông dùng dần cho các món cá kho, giả cầy.</p>
+              </div>
+              <div class="spice-tip-item">
+                <h4>2. Lá chanh Thái (Kaffir) &amp; Rau thơm</h4>
+                <p>Lá chanh Kaffir (dùng nấu Tom Yum) rửa sạch, lau khô từng lá, bỏ hộp kín trữ ngăn đá sẽ giữ nguyên 95% tinh dầu thơm suốt 3 tháng. Khi nấu chỉ cần xé đôi lá thả trực tiếp vào nồi.</p>
+              </div>
+              <div class="spice-tip-item">
+                <h4>3. Nước mắm truyền thống &amp; Tương Miso Nhật</h4>
+                <p>Nước mắm độ đạm cao nên đậy kín nắp, bảo quản nơi thoáng mát tránh ánh nắng (không bỏ tủ lạnh vì muối sẽ kết tinh lắng đáy). Ngược lại, Tương Miso và Gochujang Hàn Quốc bắt buộc bảo quản ngăn mát sau khi mở nắp.</p>
+              </div>
+              <div class="spice-tip-item">
+                <h4>4. Bí quyết khử mùi tanh Cá &amp; Hải sản</h4>
+                <p>Luôn cạo sạch màng đen trong bụng cá và máu đông dọc xương sống. Dùng nước vo gạo đặc, nước cốt chanh hoặc rượu gừng rửa sơ 3–5 phút rồi thấm khô trước khi ướp hay áp chảo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KHU VỰC 3: THỰC ĐƠN TUẦN & GIỎ ĐI CHỢ THÔNG MINH -->
+    <section id="meal-planner-section" class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title serif-heading">Thực Đơn Tuần &amp; Giỏ Đi Chợ Thông Minh</h2>
+            <p class="section-subtitle">Lên lịch món ăn 7 ngày và tự động cộng dồn toàn bộ nguyên liệu cần mua chỉ với 1 cú nhấp chuột.</p>
+          </div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <button type="button" class="btn btn-reset-filter" data-action="export-backup-json">💾 Xuất file JSON sao lưu</button>
+            <button type="button" class="btn btn-reset-filter" data-action="trigger-import-json">📂 Nhập file JSON</button>
+            <input type="file" id="import-json-input" accept=".json" style="display:none;" aria-label="Nhập file sao lưu JSON" />
+          </div>
+        </div>
+
+        <div class="planner-cart-grid">
+          <div class="panel-card">
+            <h3 class="serif-heading" style="font-size:1.3rem;margin-bottom:0.5rem;">📅 Kế Hoạch Thực Đơn 7 Ngày Trong Tuần</h3>
+            <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:1rem;">Chọn món cho từng ngày, sau đó bấm nút tổng hợp để chuyển toàn bộ nguyên liệu sang Giỏ đi chợ bên cạnh.</p>
+            <div id="weekly-planner-list"></div>
+            <button
+              type="button"
+              class="btn btn-primary-cta"
+              style="width:100%;margin-top:1.15rem;"
+              data-action="add-weekly-plan-to-cart"
+            >🛒 Tổng hợp nguyên liệu cả tuần vào Giỏ đi chợ</button>
+          </div>
+
+          <div class="panel-card">
+            <h3 class="serif-heading" style="font-size:1.3rem;margin-bottom:0.5rem;">🧺 Giỏ Đi Chợ Tự Động Cộng Dồn (<span class="js-cart-count">0</span> mục)</h3>
+            <div class="cart-custom-form">
+              <input
+                type="text"
+                id="custom-cart-input"
+                class="cart-custom-input"
+                placeholder="Thêm ghi chú riêng (VD: 2 bìa đậu phụ, 1 bó hành lá...)"
+                aria-label="Nhập nguyên liệu cần mua thêm"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary-cta"
+                style="padding:0 1rem;"
+                data-action="add-custom-cart-item"
+                data-input-id="custom-cart-input"
+              >+ Thêm mục</button>
+            </div>
+
+            <div id="cart-list-section" class="cart-items-container"></div>
+
+            <div class="cart-toolbar">
+              <button type="button" class="btn btn-primary-cta" data-action="copy-cart-list">📋 Sao chép danh sách đi chợ (Zalo)</button>
+              <button type="button" class="btn btn-reset-filter" data-action="print-recipe">🖨️ In danh sách</button>
+              <button type="button" class="btn btn-reset-filter" data-action="clear-checked-cart">✓ Xóa mục đã mua</button>
+              <button type="button" class="btn btn-reset-filter" data-action="clear-all-cart">🗑️ Làm trống giỏ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KHU VỰC 4: GÓC TÁC GIẢ & GỬI CÔNG THỨC CỦA BẠN -->
+    <section id="submit-recipe-section" class="section-block alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title serif-heading">Góc Tác Giả &amp; Đóng Góp Công Thức Gia Truyền</h2>
+            <p class="section-subtitle">Cùng lan tỏa hương vị cơm nhà ấm áp hoặc lưu ngay công thức riêng của bạn vào trình duyệt.</p>
+          </div>
+        </div>
+
+        <div class="author-submit-grid">
+          <aside class="panel-card">
+            <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+              <div id="author-avatar-wrap"></div>
+              <div>
+                <span style="font-size:0.8rem;font-weight:700;color:var(--color-primary);text-transform:uppercase;">Người sáng lập &amp; Biên soạn</span>
+                <h3 id="author-display-name" class="serif-heading" style="font-size:1.35rem;">Ban Biên Tập Bếp Á Đông</h3>
+              </div>
+            </div>
+            <p id="author-display-bio" style="color:var(--color-text-muted);font-size:0.95rem;margin-bottom:1rem;">
+              Nơi lưu giữ những công thức nấu ăn chuẩn vị truyền thống Việt - Nhật - Hàn - Thái - Hoa với định lượng chính xác đến từng gram, giúp bất kỳ ai cũng có thể nấu bữa cơm ngon chỉ sau 10 giây tra cứu.
+            </p>
+            <div style="background:var(--color-bg);padding:1rem;border-radius:var(--radius-sm);border:1px solid var(--color-border);font-size:0.88rem;">
+              <strong style="color:var(--color-accent);display:block;margin-bottom:0.35rem;">📌 Cam kết chuẩn mực định lượng:</strong>
+              <ul style="padding-left:1.1rem;color:var(--color-text-muted);">
+                <li>100% công thức có định lượng gram / ml / muỗng rõ ràng.</li>
+                <li>Tích hợp đồng hồ bấm giờ và chế độ chữ lớn rảnh tay khi vào bếp.</li>
+                <li>Hoạt động mượt mà ngoại tuyến &amp; bảo mật dữ liệu trên trình duyệt của bạn.</li>
+              </ul>
+            </div>
+            <!-- Các nút liên hệ tự động ẩn nếu chủ web chưa điền link thật -->
+            <div id="dynamic-contact-links" class="contact-links-list"></div>
+          </aside>
+
+          <div class="panel-card">
+            <h3 class="serif-heading" style="font-size:1.35rem;margin-bottom:0.35rem;">✍️ Gửi Công Thức Của Bạn / Lưu Công Thức Cá Nhân</h3>
+            <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:1.15rem;">
+              Bạn có thể lưu trực tiếp món ăn mới vào trình duyệt để sử dụng ngay (với đầy đủ tính năng hẹn giờ &amp; giỏ đi chợ), hoặc sao chép/gửi Email cho Ban biên tập.
+            </p>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="submit-dish-title">Tên món ăn *</label>
+                <input type="text" id="submit-dish-title" class="form-control" placeholder="VD: Thịt kho tàu trứng vịt nước dừa" />
+              </div>
+              <div class="form-group">
+                <label for="submit-author-name">Tên người gửi</label>
+                <input type="text" id="submit-author-name" class="form-control" placeholder="VD: Chị Mai Hương (Hà Nội)" />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="submit-dish-country">Quốc gia / Phong cách</label>
+                <select id="submit-dish-country" class="filter-select">
+                  <option value="Việt Nam">🇻🇳 Việt Nam</option>
+                  <option value="Nhật Bản">🇯🇵 Nhật Bản</option>
+                  <option value="Hàn Quốc">🇰🇷 Hàn Quốc</option>
+                  <option value="Thái Lan">🇹🇭 Thái Lan</option>
+                  <option value="Trung Hoa">🇨🇳 Trung Hoa</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="submit-dish-category">Loại món &amp; Thời gian nấu (phút)</label>
+                <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:0.5rem;">
+                  <select id="submit-dish-category" class="filter-select">
+                    <option value="Món kho/mặn">Món kho/mặn</option>
+                    <option value="Canh/Súp">Canh/Súp</option>
+                    <option value="Món xào/nướng">Món xào/nướng</option>
+                    <option value="Món sợi/nước">Món sợi/nước</option>
+                    <option value="Gỏi/Trộn">Gỏi/Trộn</option>
+                  </select>
+                  <input type="number" id="submit-dish-time" class="form-control" value="30" min="5" max="240" aria-label="Thời gian nấu (phút)" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="submit-dish-ingredients">Danh sách nguyên liệu (Mỗi nguyên liệu 1 dòng) *</label>
+              <textarea id="submit-dish-ingredients" class="form-control" placeholder="500g thịt ba chỉ&#10;5 quả trứng vịt luộc&#10;400ml nước dừa tươi&#10;3 muỗng canh nước mắm truyền thống"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="submit-dish-steps">Các bước thực hiện (Mỗi bước 1 dòng) *</label>
+              <textarea id="submit-dish-steps" class="form-control" placeholder="Bước 1: Thái thịt vuông 4cm, chần sơ nước sôi rồi ướp nước mắm, đường, hành tỏi 20 phút.&#10;Bước 2: Thắng nước màu dừa, cho thịt vào đảo săn rồi đổ nước dừa tươi ninh lửa nhỏ 45 phút cùng trứng vịt."></textarea>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;">
+              <button type="button" class="btn btn-primary-cta" data-action="submit-recipe-local">
+                💾 Lưu ngay vào Trình duyệt của tôi
+              </button>
+              <button type="button" class="btn btn-secondary-cta" data-action="submit-recipe-share">
+                📩 Sao chép / Gửi Email cho Chủ Web
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL CHI TIẾT CÔNG THỨC (RECIPE DETAIL MODAL) -->
+  <div id="recipe-detail-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-sticky-title">
+    <div class="recipe-modal-dialog">
+      <div class="modal-sticky-bar">
+        <h2 id="modal-sticky-title" class="serif-heading" style="font-size:1.25rem;color:var(--color-primary);">Chi tiết công thức</h2>
+        <div class="modal-top-actions">
+          <button type="button" class="btn btn-cooking-mode" data-action="open-cooking-mode">
+            👨‍🍳 Bật Chế Độ Vào Bếp (Chữ To)
+          </button>
+          <button type="button" class="btn btn-print-recipe" data-action="print-recipe">
+            🖨️ In công thức / Xuất PDF (A4)
+          </button>
+          <button type="button" class="btn btn-close-modal" data-action="close-recipe-modal" aria-label="Đóng cửa sổ">
+            ✕ Đóng
+          </button>
+        </div>
+      </div>
+      <div id="recipe-modal-body" class="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- MODAL GIỎ ĐI CHỢ NHANH (SHOPPING CART DRAWER / MODAL) -->
+  <div id="cart-drawer-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Giỏ đi chợ thông minh">
+    <div class="recipe-modal-dialog" style="max-width:640px;">
+      <div class="modal-sticky-bar">
+        <h2 class="serif-heading" style="font-size:1.3rem;color:var(--color-accent);">🛒 Giỏ Đi Chợ Thông Minh (<span class="js-cart-count">0</span> mục)</h2>
+        <button type="button" class="btn btn-close-modal" data-action="close-cart-modal">✕ Đóng</button>
+      </div>
+      <div class="modal-body-content">
+        <div class="cart-custom-form">
+          <input
+            type="text"
+            id="custom-cart-modal-input"
+            class="cart-custom-input"
+            placeholder="Nhập thêm nguyên liệu cần mua..."
+            aria-label="Nhập thêm nguyên liệu vào giỏ"
+          />
+          <button
+            type="button"
+            class="btn btn-secondary-cta"
+            style="padding:0 1rem;"
+            data-action="add-custom-cart-item"
+            data-input-id="custom-cart-modal-input"
+          >+ Thêm</button>
+        </div>
+        <div id="cart-list-modal" class="cart-items-container"></div>
+        <div class="cart-toolbar">
+          <button type="button" class="btn btn-primary-cta" data-action="copy-cart-list">📋 Sao chép gửi Zalo</button>
+          <button type="button" class="btn btn-reset-filter" data-action="print-recipe">🖨️ In danh sách</button>
+          <button type="button" class="btn btn-reset-filter" data-action="clear-checked-cart">✓ Xóa mục đã mua</button>
+          <button type="button" class="btn btn-reset-filter" data-action="clear-all-cart">🗑️ Xóa tất cả</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHẾ ĐỘ VÀO BẾP TOÀN MÀN HÌNH (FULLSCREEN COOKING MODE) -->
+  <div id="cooking-mode-overlay" class="cooking-mode-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cooking-dish-title">
+    <div class="cooking-header">
+      <div>
+        <span style="color:var(--color-secondary);font-size:0.85rem;font-weight:700;text-transform:uppercase;">🔥 Chế độ rảnh tay đứng bếp</span>
+        <h2 id="cooking-dish-title" class="cooking-title serif-heading">Đang chế biến</h2>
+      </div>
+      <button type="button" class="btn btn-close-modal" style="font-size:1.05rem;padding:0 1.25rem;" data-action="close-cooking-mode">
+        ✕ Thoát Chế Độ Vào Bếp
+      </button>
+    </div>
+
+    <div id="cooking-stage-content" class="cooking-stage"></div>
+
+    <div class="cooking-footer">
+      <button type="button" id="btn-cooking-prev" class="btn btn-cooking-nav" data-action="cooking-prev-step">
+        ⬅ Bước trước
+      </button>
+      <span style="color:#E6DEC8;font-size:0.95rem;">Mẹo: Đặt điện thoại/máy tính bảng ngang tầm mắt và bấm hẹn giờ từng bước</span>
+      <button type="button" id="btn-cooking-next" class="btn btn-cooking-nav" data-action="cooking-next-step">
+        Bước tiếp theo ➔
+      </button>
+    </div>
+  </div>
+
+  <!-- KHAY THÔNG BÁO TOAST -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- CHÂN TRANG (FOOTER) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title serif-heading js-brand-name">Bếp Á Đông</h3>
+          <p class="js-brand-tagline" style="color:#FEF3C7;font-weight:600;margin-bottom:0.5rem;">Tinh hoa vị Á – Ấm lửa cơm nhà</p>
+          <p style="font-size:0.9rem;opacity:0.85;">
+            Cẩm nang tra cứu công thức nấu ăn Á Đông chuẩn định lượng. Tối ưu trải nghiệm đọc công thức trên điện thoại, máy tính bảng và in ấn A4.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title serif-heading">Khám Phá Nhanh</h4>
+          <ul style="list-style:none;display:grid;gap:0.45rem;font-size:0.92rem;">
+            <li><a href="#recipes-section">• Kho công thức 5 quốc gia</a></li>
+            <li><a href="#kitchen-tips-section">• Bảng quy đổi muỗng / gram / ml</a></li>
+            <li><a href="#meal-planner-section">• Thực đơn 7 ngày &amp; Giỏ đi chợ</a></li>
+            <li><a href="#submit-recipe-section">• Đóng góp công thức mới</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title serif-heading">Nguồn Ảnh &amp; Minh Bạch Kỹ Thuật</h4>
+          <p style="font-size:0.88rem;opacity:0.85;margin-bottom:0.5rem;">
+            Hình ảnh minh họa từ Unsplash (kèm cơ chế tự động chuyển sang đồ họa SVG dự phòng khi ngoại tuyến). Bạn có thể thay ảnh chụp thực tế vào thư mục <code>assets/images/</code>.
+          </p>
+          <p style="font-size:0.82rem;color:#FEF3C7;">
+            ✓ Hoạt động 100% trên GitHub Pages &amp; LocalStorage trình duyệt.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 <strong class="js-brand-name">Bếp Á Đông</strong> – Asian Culinary Hub. Thiết kế chuẩn Mobile-First.</span>
+        <span>Hỗ trợ chạy trực tiếp trên cả <code>file://</code> và <code>https://</code></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+/* ==========================================================================
+   KHO TÀNG ẨM THỰC Á ĐÔNG (ASIAN CULINARY HUB) - LOGIC ĐIỀU KHIỂN TRUNG TÂM
+   Hoạt động 100% trên cả giao thức file://, localhost và GitHub Pages
+   ========================================================================== */
+
+// 1. HỆ THỐNG CẤU HÌNH THƯƠNG HIỆU TẬP TRUNG (SITE_CONFIG)
+const SITE_CONFIG = {
+  brandName: "Bếp Á Đông", // Biến giữ chỗ: [TÊN THƯƠNG HIỆU]
+  tagline: "Tinh hoa vị Á – Ấm lửa cơm nhà",
+  authorName: "[TÊN TÁC GIẢ/ĐẦU BẾP]",
+  authorRole: "Chuyên gia Ẩm thực Á Đông & Dinh dưỡng gia đình",
+  authorBio: "Nơi lưu giữ những công thức nấu ăn chuẩn vị truyền thống Việt - Nhật - Hàn - Thái - Hoa với định lượng chính xác đến từng gram, giúp bất kỳ ai cũng có thể nấu bữa cơm ngon chỉ sau 10 giây tra cứu.",
+  authorAvatar: "[ẢNH_CHÂN_DUNG]",
+  phone: "[SỐ ĐIỆN THOẠI]",
+  zaloLink: "[ZALO_LINK]",
+  facebookLink: "[FACEBOOK_LINK]",
+  youtubeLink: "[YOUTUBE_LINK]",
+  email: "[EMAIL]"
+};
+
+// 2. DỮ LIỆU DỰ PHÒNG (DUAL-DATA LOADING FALLBACK CHO GIAO THỨC FILE://)
+const FALLBACK_RECIPES = [
+  {
+    "id": "vn-ca-kho-nghe",
+    "title": "Cá Kho Nghệ Tươi Tiêu Đen",
+    "country": "Việt Nam",
+    "flag": "🇻🇳",
+    "category": "Món kho/mặn",
+    "isVegetarian": false,
+    "prepTime": 20,
+    "cookTime": 45,
+    "difficulty": "Trung bình",
+    "calories": 380,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Khúc cá trắm/cá chép săn chắc, thấm đẫm hương nghệ tươi giã nhỏ, riềng sả và vị cay nồng của tiêu đen, nước kho sánh vàng óng ả ăn cùng cơm trắng nóng hổi.",
+    "ingredients": [
+      {
+        "name": "Cá trắm hoặc cá chép cắt khúc",
+        "amount": 600,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Thịt ba chỉ heo (cắt miếng con chì)",
+        "amount": 150,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Nghệ tươi (cạo vỏ, giã nhuyễn)",
+        "amount": 40,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Riềng tươi (thái lát mỏng)",
+        "amount": 50,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Sả cây (đập dập, cắt khúc)",
+        "amount": 3,
+        "unit": "cây",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hành tím băm & Ớt hiểm",
+        "amount": 30,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước mắm truyền thống (40 độ đạm)",
+        "amount": 45,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước hàng (nước màu dừa)",
+        "amount": 15,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Đường thốt nốt hoặc đường nâu",
+        "amount": 15,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Tiêu đen đập dập",
+        "amount": 5,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước chè xanh đặc (hoặc nước dừa tươi)",
+        "amount": 300,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Sơ chế khử tanh & Ướp cá",
+        "content": "Cá làm sạch, cạo hết lớp màng đen trong bụng cá (đây là nguyên nhân chính gây tanh). Chà xát cá với muối hạt và chút nước cốt chanh hoặc nước vo gạo trong 5 phút rồi rửa sạch, để ráo. Ướp cá cùng nghệ tươi giã nhuyễn, hành tím, nước mắm, đường, nước màu và 1/2 lượng tiêu đen trong 20 phút cho thấm vị.",
+        "timerMinutes": 20
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Xếp nồi & Kho lửa lớn tạo màu",
+        "content": "Xếp một lớp riềng thái lát và sả đập dập dưới đáy nồi đất hoặc nồi đế dày để chống cháy. Xếp thịt ba chỉ xuống dưới, khúc cá lên trên, rưới hết nước ướp vào. Đun sôi trên lửa vừa khoảng 5 phút cho thịt cá săn lại, sau đó châm nước chè xanh (hoặc nước dừa tươi)Đang sôi xâm xấp mặt cá.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Kho liu riu & Hoàn thiện thưởng thức",
+        "content": "Hạ lửa nhỏ liu riu, mở hé vung và kho trong 40 phút cho đến khi nước kho sánh kẹo lại còn khoảng 1/3, khúc cá lên màu vàng nâu óng ả. Rắc phần tiêu đen đập dập còn lại và ớt hiểm lên trên, rưới thêm 1 muỗng canh mỡ heo hoặc dầu ăn để mặt cá bóng đẹp rồi tắt bếp.",
+        "timerMinutes": 40
+      }
+    ],
+    "tips": "Tuyệt đối phải dùng nước ĐANG SÔI khi châm thêm vào nồi cá kho; nếu chế nước lạnh khi cá đang nóng sẽ làm cá bị tanh trở lại. Lớp màng đen ở bụng cá bắt buộc phải cạo sạch.",
+    "nutritionNote": "Giàu đạm chất lượng cao từ cá và hoạt chất Curcumin kháng viêm tự nhiên từ nghệ tươi. Nên dùng kèm rau luộc để cân bằng lượng natri."
+  },
+  {
+    "id": "vn-pho-bo-truyen-thong",
+    "title": "Phở Bò Tái Nạm Truyền Thống",
+    "country": "Việt Nam",
+    "flag": "🇻🇳",
+    "category": "Món sợi/nước",
+    "isVegetarian": false,
+    "prepTime": 25,
+    "cookTime": 60,
+    "difficulty": "Khó",
+    "calories": 460,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Tinh hoa ẩm thực Việt với nước dùng trong vắt, ngọt thanh từ xương ống và nạm bò, quyện hương quế hồi thảo quả nướng thơm lừng.",
+    "ingredients": [
+      {
+        "name": "Xương ống bò (chặt khúc)",
+        "amount": 1000,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Thịt nạm bò nguyên khối",
+        "amount": 400,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Thịt thăn bò mềm (thái mỏng làm bò tái)",
+        "amount": 250,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Bánh phở tươi",
+        "amount": 600,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Gừng tươi (1 củ) & Hành tây (1 củ)",
+        "amount": 150,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hành tím nguyên vỏ",
+        "amount": 50,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hoa hồi (3 cánh), Quế thanh (5g), Thảo quả (1 quả)",
+        "amount": 15,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Đường phèn",
+        "amount": 20,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước mắm ngon & Muối hạt",
+        "amount": 30,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hành lá, ngò gai, rau quế, giá đỗ, chanh ớt",
+        "amount": 150,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Chần xương & Nướng thảo mộc dậy hương",
+        "content": "Ngâm xương ống bò với nước muối loãng, sau đó cho vào nồi nước lạnh cùng chút gừng đập dập, đun sôi mạnh 5 phút để loại bỏ bọt bẩn và mùi hôi. Đổ ra rửa sạch từng khúc xương. Cùng lúc đó, nướng gừng, hành tây, hành tím trên lửa cho xém vỏ thơm lừng rồi cạo sạch lớp than đen; rang khô hoa hồi, quế, thảo quả cho dậy mùi rồi cho vào túi vải lọc.",
+        "timerMinutes": 10
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Ninh nước dùng & Luộc chín nạm bò",
+        "content": "Cho xương bò, khối thịt nạm, gừng hành nướng và đường phèn vào nồi cùng 2.5 lít nước. Đun sôi rồi hạ lửa nhỏ ninh liu riu, thường xuyên hớt bọt để nước trong. Sau 30 phút, cho túi gia vị phở (quế, hồi, thảo quả) vào ninh tiếp 25 phút rồi vớt thịt nạm ra ngâm ngay vào tô nước sôi để nguội giúp thịt không bị thâm khô.",
+        "timerMinutes": 55
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Trụng bánh phở & Trình bày tô phở nóng",
+        "content": "Nêm lại nước dùng với muối hạt và chút nước mắm ngon vừa ăn (thả vào lúc cuối để giữ hương thơm). Thái mỏng thịt nạm đã nguội. Trụng nhanh bánh phở qua nước sôi, xếp vào tô, đặt thịt nạm và thịt bò tái thái mỏng lên trên cùng hành lá, hành tây thái mỏng. Chan nước dùng đang sôi sùng sục trực tiếp lên thịt tái để thịt chín tới hồng đào.",
+        "timerMinutes": 5
+      }
+    ],
+    "tips": "Không bỏ túi thảo mộc (quế, hồi, thảo quả) ngay từ đầu vì ninh quá lâu sẽ làm nước dùng bị đục màu và nồng mùi thuốc bắc. Chỉ thả túi gia vị trong 25-30 phút cuối.",
+    "nutritionNote": "Cân bằng tinh bột, đạm sắt dễ hấp thu từ thịt bò và tinh dầu ấm bụng từ gừng, quế, hồi."
+  },
+  {
+    "id": "vn-cha-cuon-la-lot",
+    "title": "Chả Cuốn Lá Lốt Áp Chảo Thơm Lừng",
+    "country": "Việt Nam",
+    "flag": "🇻🇳",
+    "category": "Món xào/nướng",
+    "isVegetarian": false,
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "Dễ",
+    "calories": 320,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Nhân thịt băm mềm mọng quyện hương lá lốt thái chỉ, cuộn trong chiếc lá lốt xanh mướt áp chảo cháy cạnh thơm nức gian bếp.",
+    "ingredients": [
+      {
+        "name": "Thịt nạc vai heo xay (có 20% mỡ)",
+        "amount": 400,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Lá lốt tươi (chọn lá bánh tẻ to đều)",
+        "amount": 100,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Hành tím băm nhỏ",
+        "amount": 25,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Đầu hành lá băm nhỏ",
+        "amount": 15,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước mắm ngon",
+        "amount": 15,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Dầu hào & Hạt nêm",
+        "amount": 15,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Tiêu xay",
+        "amount": 5,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Dầu ăn",
+        "amount": 30,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Sơ chế lá lốt & Trộn nhân mềm mọng",
+        "content": "Lá lốt rửa sạch, vẩy thật ráo nước. Chọn khoảng 25-30 lá to lành lặn để cuốn, phần lá nhỏ hoặc rách thái sợi thật mảnh. Cho thịt nạc vai xay vào tô cùng lá lốt thái sợi, hành tím, đầu hành lá, nước mắm, dầu hào, hạt nêm, tiêu xay và 1 muỗng cà phê dầu ăn. Quết đều tay và ướp 10 phút.",
+        "timerMinutes": 10
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Cuốn chả lá lốt đều tay",
+        "content": "Trải mặt trái (mặt nhám) của lá lốt lên thớt, múc 1 muỗng canh nhân thịt đặt vào phần bản rộng của lá, gập nhẹ hai mép bên rồi cuộn tròn lại hướng về phía cuống lá. Dùng đầu cuống lá ghim nhẹ vào thân cuốn để cố định, mặt bóng xanh quay ra ngoài.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Áp chảo lửa vừa chín vàng đều",
+        "content": "Làm nóng chảo với lớp dầu ăn mỏng trên lửa vừa. Xếp từng cuốn chả lá lốt vào chảo (đặt mép gấp xuống dưới trước để cố định). Rán khoảng 6-7 phút mỗi mặt cho đến khi vỏ lá lốt chuyển màu xanh sẫm bóng mượt và nhân thịt bên trong chín thơm.",
+        "timerMinutes": 15
+      }
+    ],
+    "tips": "Chọn thịt nạc vai có dắt chút mỡ và thêm 1 muỗng dầu ăn vào nhân sẽ giúp miếng chả lá lốt mềm ngọt, không bao giờ bị khô xác sau khi rán.",
+    "nutritionNote": "Lá lốt theo Đông y có tính ấm, giúp tán hàn, hỗ trợ tiêu hóa rất tốt khi kết hợp cùng thịt heo."
+  },
+  {
+    "id": "jp-ca-hoi-teriyaki",
+    "title": "Cá Hồi Sốt Teriyaki Áp Chảo",
+    "country": "Nhật Bản",
+    "flag": "🇯🇵",
+    "category": "Món kho/mặn",
+    "isVegetarian": false,
+    "prepTime": 5,
+    "cookTime": 12,
+    "difficulty": "Dễ",
+    "calories": 410,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Phi lê cá hồi áp chảo da giòn rụm, bên trong mềm ẩm hồng đào, áo lớp sốt Teriyaki truyền thống bóng mượt thơm dịu vị gừng chỉ trong 17 phút.",
+    "ingredients": [
+      {
+        "name": "Phi lê cá hồi tươi (còn da)",
+        "amount": 500,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Nước tương Nhật (Shoyu)",
+        "amount": 45,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Rượu ngọt Mirin",
+        "amount": 45,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Rượu Sake nấu ăn (hoặc nước lọc)",
+        "amount": 30,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Đường nâu hoặc mật ong",
+        "amount": 20,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Gừng tươi mài nhuyễn (vắt lấy nước cốt)",
+        "amount": 10,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Bột bắp (áo mỏng mặt cá)",
+        "amount": 10,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Mè trắng rang & Hành lá thái nhỏ",
+        "amount": 10,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Thấm khô cá & Pha sốt Teriyaki tỷ lệ vàng",
+        "content": "Dùng khăn giấy bếp thấm thật khô miếng cá hồi, rắc nhẹ chút muối tiêu rồi phủ lớp bột bắp thật mỏng lên mặt cá (giúp giữ độ ẩm và làm sốt bám chặt). Khuấy đều hỗn hợp sốt gồm: Nước tương Nhật, Mirin, Sake, đường và nước cốt gừng tươi.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Áp chảo mặt da giòn rụm",
+        "content": "Làm nóng chảo chống dính với 1 muỗng canh dầu ăn ở lửa vừa. Đặt mặt da cá hồi xuống áp chảo trước trong 4 phút cho đến khi da cá vàng giòn, sau đó lật mặt áp chảo thêm 3 phút. Dùng giấy thấm bớt lượng mỡ thừa chảy ra trong chảo.",
+        "timerMinutes": 7
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Rim sốt Teriyaki sánh bóng",
+        "content": "Đổ hỗn hợp sốt Teriyaki vào chảo, đun sôi lăn tăn và dùng muỗng liên tục rưới sốt lên khắp mặt cá trong 3-4 phút cho đến khi sốt sánh kẹo, bao phủ lớp men bóng mượt quanh miếng cá. Rắc mè trắng rang và hành lá, thưởng thức nóng.",
+        "timerMinutes": 4
+      }
+    ],
+    "tips": "Không áp chảo cá hồi quá lâu trước khi đổ sốt để tránh thịt cá bị khô. Lớp bột bắp siêu mỏng là bí quyết của đầu bếp Nhật giúp sốt Teriyaki ôm trọn miếng cá.",
+    "nutritionNote": "Dồi dào axit béo Omega-3, DHA và EPA tốt cho tim mạch, trí não và thị lực."
+  },
+  {
+    "id": "jp-canh-miso-wakame",
+    "title": "Canh Miso Đậu Phụ Rong Biển Wakame",
+    "country": "Nhật Bản",
+    "flag": "🇯🇵",
+    "category": "Canh/Súp",
+    "isVegetarian": true,
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "Dễ",
+    "calories": 110,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Bát canh thanh đạm chuẩn vị cơm nhà Nhật Bản với vị ngọt Umami từ tảo bẹ Kombu, đậu phụ non mềm mịn và rong biển Wakame xanh mướt.",
+    "ingredients": [
+      {
+        "name": "Đậu phụ non (Silken Tofu) cắt khối vuông",
+        "amount": 300,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Rong biển khô Wakame",
+        "amount": 10,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Tương Miso vàng hoặc trắng (Shiro Miso)",
+        "amount": 45,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Tảo bẹ Kombu (hoặc bột Dashi tảo bẹ)",
+        "amount": 10,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nấm kim châm hoặc nấm đông cô tươi",
+        "amount": 100,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Hành boa-rô hoặc hành lá thái khoanh mỏng",
+        "amount": 20,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Nước lọc",
+        "amount": 800,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Ngâm rong biển & Nấu nước dùng Dashi",
+        "content": "Ngâm rong biển khô Wakame trong nước mát 5 phút cho nở mềm rồi vắt ráo. Cho 800ml nước và miếng tảo bẹ Kombu vào nồi, đun lửa vừa đến khi nước bắt đầu sủi tăm quanh thành nồi (khoảng 5 phút) thì vớt tảo bẹ ra ngay để nước không bị nhớt.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Nấu nấm & Đậu phụ non",
+        "content": "Thả nấm vào nồi nước dùng Dashi đun sôi nhẹ 3 phút cho ngọt nước. Tiếp theo, nhẹ nhàng cho đậu phụ non cắt khối và rong biển Wakame vào, đun lăn tăn thêm 2 phút cho đậu phụ nóng đều từ bên trong.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Hòa tan tương Miso sau khi tắt bếp",
+        "content": "Hạ lửa xuống mức thấp nhất hoặc tắt bếp. Cho tương Miso vào rây lọc, nhúng rây vào nồi canh và dùng muỗng khuấy nhẹ cho Miso tan hết vào nước dùng mà không bị lợn cợn. Rắc hành lá thái khoanh và múc ra bát dùng ngay.",
+        "timerMinutes": 2
+      }
+    ],
+    "tips": "Nguyên tắc vàng của ẩm thực Nhật: TUYỆT ĐỐI KHÔNG đun sôi bùng canh sau khi đã cho tương Miso vào, vì nhiệt độ cao sẽ làm bay mất hương thơm tinh tế và tiêu diệt lợi khuẩn men vi sinh trong Miso.",
+    "nutritionNote": "Ít calo, giàu lợi khuẩn probiotic từ tương Miso lên men tự nhiên, i-ốt và khoáng chất từ rong biển Wakame."
+  },
+  {
+    "id": "kr-canh-kim-chi-sundubu",
+    "title": "Canh Kim Chi Đậu Phụ Non (Sundubu Jjigae)",
+    "country": "Hàn Quốc",
+    "flag": "🇰🇷",
+    "category": "Canh/Súp",
+    "isVegetarian": false,
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "Dễ",
+    "calories": 340,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1583224964978-2257b960c3d3?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Thố canh sôi sùng sục đỏ au, vị chua cay sảng khoái từ kim chi muối chín tới, thịt ba chỉ mềm béo và đậu phụ non béo ngậy quyện lòng đỏ trứng gà.",
+    "ingredients": [
+      {
+        "name": "Đậu phụ non ống Hàn Quốc (Sundubu)",
+        "amount": 350,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Kim chi cải thảo (chọn loại đã lên men chua vừa)",
+        "amount": 250,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Nước muối kim chi",
+        "amount": 60,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Thịt ba chỉ heo thái lát mỏng",
+        "amount": 150,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Trứng gà tươi",
+        "amount": 2,
+        "unit": "quả",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Ớt bột Hàn Quốc (Gochugaru) & Tương ớt Gochujang",
+        "amount": 25,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Dầu mè thơm & Tỏi băm",
+        "amount": 20,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hành tây, nấm kim châm, hành boa-rô",
+        "amount": 150,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Nước dùng cá cơm hoặc nước vo gạo",
+        "amount": 600,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Xào thịt ba chỉ & Kim chi với dầu mè",
+        "content": "Làm nóng nồi đất (Ttukbaegi) hoặc nồi sâu lòng với dầu mè. Cho tỏi băm, hành tây và thịt ba chỉ vào đảo săn trong 3 phút. Tiếp theo cho kim chi cắt khúc, ớt bột Hàn Quốc Gochugaru và tương ớt Gochujang vào xào kỹ 4 phút để kim chi tiết vị chua ngọt đậm đà.",
+        "timerMinutes": 7
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Đun sôi nước dùng & Nước kim chi",
+        "content": "Đổ 600ml nước dùng cùng 60ml nước muối kim chi vào nồi. Đun sôi và hạ lửa vừa nấu trong 8 phút cho thịt ba chỉ và kim chi mềm nhừ, hòa quyện hương vị.",
+        "timerMinutes": 8
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Thả đậu phụ non & Đập trứng gà nóng hổi",
+        "content": "Dùng muỗng lớn múc từng miếng đậu phụ non Sundubu thả nhẹ vào nồi cùng nấm kim châm, đun sôi thêm 4 phút. Ngay trước khi tắt bếp, đập trứng gà vào giữa nồi canh đang sôi, rắc hành boa-rô thái chéo và bắc ra bàn ăn ngay.",
+        "timerMinutes": 5
+      }
+    ],
+    "tips": "Bí quyết để canh kim chi ngon như ngoài hàng là dùng kim chi đã muối chua từ 2-3 tuần và xào kỹ kim chi với dầu mè trước khi đổ nước.",
+    "nutritionNote": "Giàu vitamin C, lợi khuẩn từ kim chi và protein mềm dễ tiêu hóa từ đậu phụ non."
+  },
+  {
+    "id": "kr-com-tron-bibimbap",
+    "title": "Cơm Trộn Hàn Quốc (Bibimbap Ngũ Sắc)",
+    "country": "Hàn Quốc",
+    "flag": "🇰🇷",
+    "category": "Gỏi/Trộn",
+    "isVegetarian": false,
+    "prepTime": 20,
+    "cookTime": 15,
+    "difficulty": "Trung bình",
+    "calories": 520,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Tô cơm ngũ sắc hài hòa âm dương với thịt bò xào thơm mềm, 5 loại rau củ giòn ngọt, trứng ốp la lòng đào và sốt tương ớt Gochujang đậm đà.",
+    "ingredients": [
+      {
+        "name": "Cơm trắng dẻo nóng (nấu từ gạo hạt tròn)",
+        "amount": 600,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Thịt thăn bò thái sợi hoặc băm nhỏ",
+        "amount": 250,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Trứng gà (ốp la lòng đào)",
+        "amount": 4,
+        "unit": "quả",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Cà rốt & Bí ngòi (thái sợi vừa)",
+        "amount": 200,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Cải bó xôi (rau chân vịt) & Giá đỗ",
+        "amount": 250,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Nấm hương tươi thái lát",
+        "amount": 100,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Tương ớt Hàn Quốc Gochujang",
+        "amount": 60,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước tương, Dầu mè, Tỏi băm, Mật ong, Mè rang",
+        "amount": 45,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Pha sốt Gochujang & Ướp thịt bò",
+        "content": "Ướp thịt bò với 1 muỗng canh nước tương, 1 muỗng cà phê dầu mè, tỏi băm và chút tiêu trong 10 phút. Pha bát sốt trộn cơm gồm: 4 muỗng canh tương ớt Gochujang, 1.5 muỗng canh mật ong (hoặc đường), 1.5 muỗng canh dầu mè, 2 muỗng canh nước ấm và 1 muỗng canh mè rang, khuấy sánh mịn.",
+        "timerMinutes": 10
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Chần rau & Xào riêng từng nguyên liệu",
+        "content": "Chần nhanh cải bó xôi và giá đỗ trong nước sôi có chút muối khoảng 1 phút, vớt ra vắt ráo rồi trộn nhẹ với chút dầu mè và tỏi. Dùng chảo nóng xào riêng lần lượt cà rốt, bí ngòi, nấm hương mỗi thứ 2 phút cho chín giòn giữ màu. Cuối cùng xào thịt bò trên lửa lớn 3 phút cho chín mềm.",
+        "timerMinutes": 10
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Ốp la trứng & Xếp tô ngũ sắc",
+        "content": "Ốp la 4 quả trứng gà lòng đào. Xới cơm nóng vào tô lớn (hoặc thố đá nóng phết chút dầu mè dưới đáy để tạo lớp cơm cháy giòn), xếp 5 loại rau củ và thịt bò thành các múi màu sắc xung quanh, đặt trứng ốp la ở chính giữa, rưới sốt Gochujang và rắc mè rang.",
+        "timerMinutes": 5
+      }
+    ],
+    "tips": "Xào riêng từng loại rau củ với chút muối giúp giữ nguyên màu sắc tươi sáng (cam, xanh, trắng, nâu) và độ giòn đặc trưng của từng nguyên liệu.",
+    "nutritionNote": "Một bữa ăn hoàn chỉnh giàu chất xơ từ 5 loại rau nấm, protein từ thịt bò - trứng và tinh bột cân đối."
+  },
+  {
+    "id": "th-canh-tom-yum",
+    "title": "Canh Tom Yum Tôm Chua Cay (Tom Yum Kung)",
+    "country": "Thái Lan",
+    "flag": "🇹🇭",
+    "category": "Canh/Súp",
+    "isVegetarian": false,
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "Trung bình",
+    "calories": 290,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Quốc hồn quốc túy ẩm thực Thái với vị chua thanh của chanh, cay nồng của ớt và sốt Nam Prik Pao, dậy hương bộ ba sả - riềng - lá chanh Kaffir.",
+    "ingredients": [
+      {
+        "name": "Tôm sú tươi (lột vỏ chừa đuôi, giữ đầu tôm)",
+        "amount": 400,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Nấm rơm tươi (cắt đôi)",
+        "amount": 200,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Sả cây (đập dập cắt chéo) & Riềng non (thái lát)",
+        "amount": 80,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Lá chanh Thái (Kaffir) xé đôi bỏ gân giữa",
+        "amount": 8,
+        "unit": "lá",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Sốt ớt Thái Nam Prik Pao (sốt Tom Yum)",
+        "amount": 45,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước cốt dừa hoặc Sữa đặc không đường",
+        "amount": 100,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Nước mắm ngon",
+        "amount": 35,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước cốt chanh tươi (vắt sẵn)",
+        "amount": 40,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Ớt hiểm đập dập & Ngò rí/Ngò gai",
+        "amount": 25,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Nước lọc hoặc nước luộc gà",
+        "amount": 800,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Xào đầu tôm lấy gạch đỏ & Nấu nước dùng thảo mộc",
+        "content": "Cho 1 muỗng dầu ăn vào nồi, phi thơm phần đầu tôm sú và dùng muỗng dầm nhẹ để gạch tôm tiết ra màu đỏ cam tự nhiên. Đổ 800ml nước vào đun sôi 5 phút rồi vớt bỏ xác đầu tôm. Thả sả đập dập, riềng thái lát và lá chanh Kaffir xé nhỏ vào đun tiếp 5 phút cho tiết tinh dầu.",
+        "timerMinutes": 10
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Nấu nấm rơm, sốt Tom Yum & Tôm tươi",
+        "content": "Cho nấm rơm, sốt ớt Thái Nam Prik Pao và ớt hiểm vào nồi khuấy tan. Khi nước sôi bùng, thả phần thịt tôm sú và nước cốt dừa vào đun đúng 3 phút cho đến khi tôm vừa chuyển màu đỏ hồng cong chữ C.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Nêm nước mắm & Nước cốt chanh sau khi tắt bếp",
+        "content": "Nêm nước mắm vừa ăn rồi TẮT BẾP. Ngay sau khi tắt bếp, rưới nước cốt chanh tươi vào khuấy đều và rắc ngò rí, ngò gai lên trên. Thưởng thức ngay khi còn nóng hổi.",
+        "timerMinutes": 2
+      }
+    ],
+    "tips": "Luôn vắt nước cốt chanh SAU KHI ĐÃ TẮT BẾP để canh Tom Yum có vị chua thanh thơm mát mà không bị đắng. Đừng nấu tôm quá 3 phút để thịt tôm giữ độ giòn ngọt.",
+    "nutritionNote": "Tinh dầu sả, riềng, lá chanh giúp giải cảm, kích thích vị giác; tôm sú giàu canxi và đạm ít béo."
+  },
+  {
+    "id": "th-goi-du-du-som-tum",
+    "title": "Gỏi Đu Đủ Thái Giòn Cay (Som Tum Thai)",
+    "country": "Thái Lan",
+    "flag": "🇹🇭",
+    "category": "Gỏi/Trộn",
+    "isVegetarian": false,
+    "prepTime": 15,
+    "cookTime": 0,
+    "difficulty": "Dễ",
+    "calories": 210,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Đu đủ xanh bào sợi giòn sần sật được giã nhẹ trong cối cùng tôm khô, đậu đũa, cà chua bi, đậu phộng rang và sốt đường thốt nốt chua cay bùng vị.",
+    "ingredients": [
+      {
+        "name": "Đu đủ xanh (bào sợi hơi dày để giữ độ giòn)",
+        "amount": 400,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Cà rốt bào sợi",
+        "amount": 80,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Đậu đũa tươi (cắt khúc 3cm)",
+        "amount": 80,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Cà chua bi (bổ đôi)",
+        "amount": 100,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Tôm khô loại ngon (ngâm nước ấm cho mềm)",
+        "amount": 30,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Đậu phộng (lạc) rang chín giòn",
+        "amount": 40,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Đường thốt nốt (hoặc đường nâu)",
+        "amount": 35,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước mắm ngon & Nước cốt me đặc",
+        "amount": 45,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước cốt chanh tươi (2 quả)",
+        "amount": 30,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Tỏi tép (4 tép) & Ớt hiểm tươi (2-3 trái)",
+        "amount": 20,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Ngâm đá sợi đu đủ cực giòn",
+        "content": "Đu đủ xanh gọt vỏ, rửa sạch mủ, băm rồi bào thành sợi vừa ăn. Ngâm ngay sợi đu đủ và cà rốt vào tô nước đá lạnh 10 phút để sợi đu đủ cứng giòn sần sật, sau đó vớt ra vẩy thật ráo nước.",
+        "timerMinutes": 10
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Giã sốt Som Tum dậy vị trong cối",
+        "content": "Cho tỏi và ớt hiểm vào cối giã dập. Thêm tôm khô và đậu đũa vào giã nhẹ tay cho đậu đũa hơi dập để thấm vị. Tiếp theo cho đường thốt nốt, nước mắm, nước cốt me và nước cốt chanh vào dùng chày đảo đều cho đường tan hoàn toàn thành hỗn hợp sốt sánh đậm.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Quết trộn đu đủ & Cà chua bi",
+        "content": "Cho cà chua bi, sợi đu đủ, cà rốt và 1/2 lượng đậu phộng rang vào cối (hoặc âu lớn). Một tay dùng chày ấn nhẹ, một tay dùng muỗng đảo đều từ dưới lên trong 2 phút cho sợi đu đủ ngấm đẫm sốt chua cay mặn ngọt. Bày ra đĩa, rắc phần đậu phộng rang còn lại lên trên.",
+        "timerMinutes": 2
+      }
+    ],
+    "tips": "Bí quyết của Som Tum Thái là kỹ thuật vừa giã nhẹ vừa đảo (pound & toss) giúp sợi đu đủ hơi dập bề mặt để hút trọn nước sốt mà vẫn giữ độ giòn tan.",
+    "nutritionNote": "Ít chất béo, giàu enzyme Papain tự nhiên từ đu đủ xanh giúp hỗ trợ tiêu hóa đạm rất hiệu quả."
+  },
+  {
+    "id": "cn-dau-phu-tu-xuyen",
+    "title": "Đậu Phụ Tứ Xuyên (Mapo Tofu Chuẩn Vị)",
+    "country": "Trung Hoa",
+    "flag": "🇨🇳",
+    "category": "Món kho/mặn",
+    "isVegetarian": false,
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "Trung bình",
+    "calories": 360,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Những viên đậu phụ trắng ngần mềm tan không vỡ, quyện trong lớp sốt thịt băm đỏ sánh bóng, thơm nồng tương đậu Pixian và vị cay tê đặc trưng của tiêu Tứ Xuyên.",
+    "ingredients": [
+      {
+        "name": "Đậu phụ mềm (cắt khối vuông 2cm)",
+        "amount": 450,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Thịt heo hoặc thịt bò băm nhỏ",
+        "amount": 150,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Sốt tương đậu cay Tứ Xuyên (Doubanjiang)",
+        "amount": 30,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hạt tiêu Tứ Xuyên (Hoa tiêu) rang thơm giã nhỏ",
+        "amount": 5,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Tỏi băm & Gừng băm nhuyễn",
+        "amount": 25,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước tương (Xì dầu) & Dầu hào",
+        "amount": 25,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Dầu ớt sa tế & Đường",
+        "amount": 15,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Bột năng hoặc bột bắp (hòa với 30ml nước)",
+        "amount": 15,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hành lá hoặc tỏi tây thái nhỏ",
+        "amount": 30,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Nước dùng (hoặc nước ấm)",
+        "amount": 250,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Chần đậu phụ với nước muối để không bị vỡ",
+        "content": "Đun sôi một nồi nước nhỏ với 1 muỗng cà phê muối. Thả đậu phụ cắt khối vào chần nhẹ trên lửa vừa trong 2 phút rồi vớt ra để ráo. Bước này giúp miếng đậu phụ săn chắc, dẻo dai và không bị nát khi đảo sốt.",
+        "timerMinutes": 3
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Xào thịt băm & Lên màu sốt Doubanjiang",
+        "content": "Làm nóng chảo với dầu ăn, cho thịt băm vào xào tơi vàng. Thêm tỏi băm, gừng băm và sốt tương đậu cay Doubanjiang cùng dầu ớt vào xào lửa vừa 3 phút cho đến khi dậy mùi thơm và tiết ra lớp dầu màu đỏ cam bắt mắt.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Om đậu phụ & Xuống bột sánh bóng",
+        "content": "Đổ 250ml nước dùng, nước tương và chút đường vào đun sôi. Nhẹ nhàng trút đậu phụ vào om lửa vừa 5 phút. Sau đó rưới từ từ nước bột năng vào, dùng lưng muỗng đẩy nhẹ từ thành chảo vào giữa để sốt sánh bóng ôm lấy đậu. Rắc tiêu Tứ Xuyên giã nhỏ và hành lá lên mặt.",
+        "timerMinutes": 7
+      }
+    ],
+    "tips": "Khi đậu phụ đã vào chảo, dùng lưng muỗng đẩy nhẹ hoặc lắc chảo thay vì đảo mạnh tay. Muốn ăn chay, bạn chỉ cần thay thịt băm bằng nấm đùi gà/nấm hương băm nhỏ!",
+    "nutritionNote": "Đậu phụ giàu đạm thực vật và isoflavone; tiêu Tứ Xuyên và gừng tỏi giúp làm ấm cơ thể nhanh chóng."
+  },
+  {
+    "id": "cn-com-chien-duong-chau",
+    "title": "Cơm Chiên Dương Châu Hạt Tơi Vàng Óng",
+    "country": "Trung Hoa",
+    "flag": "🇨🇳",
+    "category": "Món xào/nướng",
+    "isVegetarian": false,
+    "prepTime": 10,
+    "cookTime": 10,
+    "difficulty": "Dễ",
+    "calories": 480,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Từng hạt cơm săn tơi áo đều lớp lòng đỏ trứng vàng ươm, kết hợp vị ngọt đậm của lạp xưởng, tôm tươi, xá xíu và rau củ hạt lựu rực rỡ sắc màu.",
+    "ingredients": [
+      {
+        "name": "Cơm nguội để tủ lạnh qua đêm (hạt tơi khô)",
+        "amount": 600,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Trứng gà (tách riêng 2 lòng đỏ trộn cơm, phần còn lại đánh tan)",
+        "amount": 3,
+        "unit": "quả",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Tôm tươi bóc vỏ (cắt hạt lựu) & Lạp xưởng (thái hạt lựu)",
+        "amount": 180,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Thịt xá xíu hoặc giò lụa (cắt hạt lựu)",
+        "amount": 100,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Đậu Hà Lan, Cà rốt (cắt hạt lựu) & Bắp ngọt",
+        "amount": 150,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Hành lá thái nhỏ & Tỏi băm",
+        "amount": 40,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước tương (Xì dầu), Dầu hào, Dầu mè, Hạt nêm, Tiêu trắng",
+        "amount": 35,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Áo cơm bằng lòng đỏ trứng & Sơ chế nhân",
+        "content": "Bóp tơi phần cơm nguội, trộn đều với 2 lòng đỏ trứng gà và 1 muỗng cà phê dầu mè để từng hạt cơm được bao phủ lớp màu vàng tự nhiên. Chần sơ cà rốt, đậu Hà Lan và bắp ngọt qua nước sôi 2 phút rồi để thật ráo.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Xào nhân hạt lựu thơm săn",
+        "content": "Làm nóng chảo với chút dầu, cho lạp xưởng vào đảo trước cho tiết mỡ thơm, tiếp theo cho tôm tươi, thịt xá xíu và rau củ hạt lựu vào xào trên lửa lớn 3 phút cùng chút hạt nêm rồi trút riêng ra đĩa.",
+        "timerMinutes": 4
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Chiên cơm lửa lớn hạt nhảy tơi xốp",
+        "content": "Phi thơm tỏi băm trên chảo nóng, đổ phần trứng còn lại vào đảo nhanh rồi trút ngay cơm đã áo lòng đỏ vào chiên trên lửa lớn 5 phút cho hạt cơm khô tơi. Đổ đĩa nhân hạt lựu vào đảo đều, rưới 1 muỗng canh nước tương dọc thành chảo để dậy mùi khói (Wok Hei), thêm hành lá và tiêu trắng rồi tắt bếp.",
+        "timerMinutes": 6
+      }
+    ],
+    "tips": "Trộn lòng đỏ trứng sống vào cơm nguội trước khi chiên là bí quyết giúp 100% hạt cơm vàng óng, tơi rời mà không bị ướt hay vón cục.",
+    "nutritionNote": "Đầy đủ năng lượng cho bữa trưa hoặc bữa tối nhanh gọn trong 20 phút, tận dụng hoàn hảo cơm nguội gia đình."
+  },
+  {
+    "id": "vn-dau-phu-kho-nam-chay",
+    "title": "Đậu Phụ Kho Nấm Đông Cô Sốt Tương Gừng (Chay)",
+    "country": "Việt Nam",
+    "flag": "🇻🇳",
+    "category": "Món kho/mặn",
+    "isVegetarian": true,
+    "prepTime": 8,
+    "cookTime": 12,
+    "difficulty": "Dễ",
+    "calories": 240,
+    "baseServings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",
+    "sourceStatus": "Công thức chuẩn truyền thống",
+    "description": "Món chay thanh tịnh hoàn thành dưới 20 phút: đậu phụ chiên vàng thấm đẫm nước kho nấm đông cô ngọt dịu, thơm nồng gừng tươi và tiêu đen.",
+    "ingredients": [
+      {
+        "name": "Đậu phụ trắng (cắt miếng vuông vừa ăn)",
+        "amount": 400,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Nấm đông cô tươi (hoặc nấm hương ngâm nở)",
+        "amount": 150,
+        "unit": "g",
+        "group": "Nguyên liệu chính"
+      },
+      {
+        "name": "Gừng tươi thái sợi chỉ",
+        "amount": 25,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Nước tương (Xì dầu) đậm đặc",
+        "amount": 40,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Dầu hào chay & Đường nâu",
+        "amount": 25,
+        "unit": "g",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Dầu mè thơm & Tiêu đen xay",
+        "amount": 10,
+        "unit": "ml",
+        "group": "Gia vị & Thảo mộc"
+      },
+      {
+        "name": "Hành boa-rô thái lát & Ớt sừng",
+        "amount": 30,
+        "unit": "g",
+        "group": "Rau củ & Ăn kèm"
+      },
+      {
+        "name": "Nước lọc (hoặc nước ngâm nấm)",
+        "amount": 150,
+        "unit": "ml",
+        "group": "Nguyên liệu chính"
+      }
+    ],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Bước 1: Áp chảo vàng đều đậu phụ",
+        "content": "Thấm khô đậu phụ, cho vào chảo chống dính áp chảo với lượng dầu vừa phải trong 5 phút cho các mặt vàng giòn nhẹ. Nấm đông cô rửa sạch, khứa chữ thập trên mũ nấm hoặc cắt đôi.",
+        "timerMinutes": 5
+      },
+      {
+        "stepNumber": 2,
+        "title": "Bước 2: Phi thơm boa-rô gừng & Xào nấm",
+        "content": "Phi thơm phần gốc hành boa-rô và gừng thái sợi trong nồi đất 1 phút. Cho nấm đông cô vào xào săn cùng nước tương, dầu hào chay và đường nâu trong 3 phút.",
+        "timerMinutes": 4
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bước 3: Kho đậu phụ thấm vị dưới 10 phút",
+        "content": "Xếp đậu phụ đã áp chảo vào nồi nấm, thêm 150ml nước (hoặc nước ngâm nấm) đun lửa vừa 8 phút cho nước kho sánh lại thấm sâu vào ruột đậu. Rưới dầu mè, rắc tiêu đen, ớt sừng và lá boa-rô xanh lên trên.",
+        "timerMinutes": 8
+      }
+    ],
+    "tips": "Giữ lại phần nước ngâm nấm hương khô (lọc bỏ cặn) để làm nước kho sẽ giúp món chay có vị ngọt Umami sâu sắc tự nhiên mà không cần bột ngọt.",
+    "nutritionNote": "Thanh đạm, không cholesterol, giàu chất chống oxy hóa Lentinan từ nấm đông cô giúp tăng cường đề kháng."
+  }
+];
+
+// 3. TRẠNG THÁI ỨNG DỤNG (APPLICATION STATE)
+const AppState = {
+  recipes: [],
+  customRecipes: [],
+  favorites: [],
+  cart: [],
+  weeklyPlan: {},
+  filters: {
+    search: "",
+    country: "all",
+    category: "all",
+    time: "all",
+    difficulty: "all",
+    onlyFavorites: false,
+    onlyVegetarian: false,
+    activeChip: ""
+  },
+  activeRecipeId: null,
+  currentServings: 4,
+  checkedHomeIngredients: {},
+  cookingModeStepIndex: 0,
+  timers: {},
+  fontScale: "normal",
+  audioCtx: null
+};
+
+// 4. TIỆN ÍCH LƯU TRỮ AN TOÀN & XỬ LÝ TIẾNG VIỆT KHÔNG DẤU
+function safeStorageGet(key, fallback) {
+  try {
+    const raw = window.localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : fallback;
+  } catch (err) {
+    return fallback;
+  }
+}
+
+function safeStorageSet(key, value) {
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch (err) {
+    // Bỏ qua nếu iframe chặn localStorage
+  }
+}
+
+function isRealValue(val) {
+  if (!val || typeof val !== "string") return false;
+  const trimmed = val.trim();
+  if (!trimmed) return false;
+  if (trimmed.startsWith("[") && trimmed.endsWith("]")) return false;
+  return true;
+}
+
+function removeVietnameseTones(str) {
+  if (!str) return "";
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .toLowerCase()
+    .trim();
+}
+
+function escapeHtml(str) {
+  if (str === null || str === undefined) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function formatQuantity(num) {
+  const rounded = Math.round(num * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1).replace(".", ",");
+}
+
+// Tạo ảnh SVG dự phòng thẩm mỹ khi ảnh ngoài không tải được
+function createDishFallbackSvg(title, flag) {
+  const safeTitle = escapeHtml(title || "Món ngon Á Đông");
+  const safeFlag = escapeHtml(flag || "🍲");
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#C84B31"/>
+        <stop offset="55%" stop-color="#D97706"/>
+        <stop offset="100%" stop-color="#2D6A4F"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="url(#bg)"/>
+    <circle cx="400" cy="210" r="88" fill="rgba(250,246,240,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+    <text x="400" y="232" font-size="68" text-anchor="middle" fill="#FFFFFF">${safeFlag}</text>
+    <text x="400" y="360" font-family="Georgia, serif" font-size="30" font-weight="bold" text-anchor="middle" fill="#FAF6F0">${safeTitle}</text>
+    <text x="400" y="400" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#FEF3C7">Bếp Á Đông • Tinh hoa vị Á</text>
+  </svg>`;
+  return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+}
+
+window.handleImageFallback = function(imgEl, title, flag) {
+  if (!imgEl || imgEl.dataset.fallbackApplied === "true") return;
+  imgEl.dataset.fallbackApplied = "true";
+  imgEl.src = createDishFallbackSvg(title, flag);
+};
+
+// 5. THÔNG BÁO TOAST TRONG TRANG (KHÔNG DÙNG ALERT/CONFIRM)
+function showToast(message) {
+  const container = document.getElementById("toast-container");
+  if (!container) return;
+  const item = document.createElement("div");
+  item.className = "toast-item";
+  item.textContent = message;
+  container.appendChild(item);
+  setTimeout(() => {
+    item.style.opacity = "0";
+    item.style.transition = "opacity 0.25s ease";
+    setTimeout(() => item.remove(), 260);
+  }, 3200);
+}
+
+function copyTextToClipboard(text, successMsg) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast(successMsg);
+    }).catch(() => {
+      fallbackCopyText(text, successMsg);
+    });
+  } else {
+    fallbackCopyText(text, successMsg);
+  }
+}
+
+function fallbackCopyText(text, successMsg) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.left = "-9999px";
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand("copy");
+    showToast(successMsg);
+  } catch (err) {
+    showToast("Không thể sao chép tự động, vui lòng bôi đen văn bản.");
+  }
+  document.body.removeChild(ta);
+}
+
+// 6. ÂM THANH CHUÔNG BÁO HẸN GIỜ BẰNG WEB AUDIO API (KHÔNG CẦN FILE MP3 NGOÀI)
+function playTimerAlarmSound() {
+  try {
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) return;
+    if (!AppState.audioCtx) {
+      AppState.audioCtx = new AudioCtx();
+    }
+    const ctx = AppState.audioCtx;
+    if (ctx.state === "suspended") {
+      ctx.resume();
+    }
+    const notes = [523.25, 659.25, 783.99, 1046.5];
+    notes.forEach((freq, idx) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.22);
+      gain.gain.setValueAtTime(0.001, ctx.currentTime + idx * 0.22);
+      gain.gain.exponentialRampToValueAtTime(0.25, ctx.currentTime + idx * 0.22 + 0.04);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.22 + 0.20);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(ctx.currentTime + idx * 0.22);
+      osc.stop(ctx.currentTime + idx * 0.22 + 0.21);
+    });
+  } catch (err) {
+    // Bỏ qua nếu trình duyệt chặn âm thanh
+  }
+}
+
+// 7. CƠ CHẾ NẠP DỮ LIỆU KÉP (DUAL-DATA LOADING)
+async function loadRecipesData() {
+  AppState.customRecipes = safeStorageGet("bep_a_dong_custom_recipes", []);
+  AppState.favorites = safeStorageGet("bep_a_dong_favorites", ["vn-ca-kho-nghe", "jp-ca-hoi-teriyaki"]);
+  AppState.cart = safeStorageGet("bep_a_dong_cart", []);
+  AppState.weeklyPlan = safeStorageGet("bep_a_dong_weekly_plan", {
+    "Thứ 2": "vn-ca-kho-nghe",
+    "Thứ 3": "jp-ca-hoi-teriyaki",
+    "Thứ 4": "kr-canh-kim-chi-sundubu",
+    "Thứ 5": "cn-dau-phu-tu-xuyen",
+    "Thứ 6": "th-canh-tom-yum",
+    "Thứ 7": "kr-com-tron-bibimbap",
+    "Chủ nhật": "vn-pho-bo-truyen-thong"
+  });
+  AppState.fontScale = safeStorageGet("bep_a_dong_font_scale", "normal");
+  applyFontScale(AppState.fontScale);
+
+  let baseList = FALLBACK_RECIPES;
+  const remoteJsonPath = window.EXTERNAL_RECIPES_URL || "";
+  if (remoteJsonPath && window.location.protocol.startsWith("http")) {
+    try {
+      const response = await fetch(remoteJsonPath);
+      if (response.ok) {
+        const parsed = await response.json();
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          baseList = parsed;
+        }
+      }
+    } catch (err) {
+      baseList = FALLBACK_RECIPES;
+    }
+  }
+  AppState.recipes = [...AppState.customRecipes, ...baseList];
+}
+
+// 8. ÁP DỤNG THÔNG TIN THƯƠNG HIỆU & ẨN NÚT LIÊN HỆ RỖNG (ZERO DEAD LINKS)
+function renderBrandAndContacts() {
+  const brandName = isRealValue(SITE_CONFIG.brandName) ? SITE_CONFIG.brandName : "Bếp Á Đông";
+  const tagline = isRealValue(SITE_CONFIG.tagline) ? SITE_CONFIG.tagline : "Tinh hoa vị Á – Ấm lửa cơm nhà";
+
+  document.querySelectorAll(".js-brand-name").forEach((el) => {
+    el.textContent = brandName;
+  });
+  document.querySelectorAll(".js-brand-tagline").forEach((el) => {
+    el.textContent = tagline;
+  });
+
+  const authorNameEl = document.getElementById("author-display-name");
+  if (authorNameEl) {
+    authorNameEl.textContent = isRealValue(SITE_CONFIG.authorName)
+      ? SITE_CONFIG.authorName
+      : "Ban Biên Tập Ẩm Thực " + brandName;
+  }
+
+  const authorBioEl = document.getElementById("author-display-bio");
+  if (authorBioEl && isRealValue(SITE_CONFIG.authorBio)) {
+    authorBioEl.textContent = SITE_CONFIG.authorBio;
+  }
+
+  const avatarWrap = document.getElementById("author-avatar-wrap");
+  if (avatarWrap) {
+    if (isRealValue(SITE_CONFIG.authorAvatar)) {
+      avatarWrap.innerHTML = `<img src="${escapeHtml(SITE_CONFIG.authorAvatar)}" alt="Chân dung tác giả" style="width:72px;height:72px;border-radius:50%;object-fit:cover;">`;
+    } else {
+      avatarWrap.innerHTML = `<div class="brand-icon" style="width:64px;height:64px;font-size:2rem;">👨‍🍳</div>`;
+    }
+  }
+
+  // Hiển thị thông minh các nút liên hệ: tự động ẩn nếu đang giữ chỗ
+  const contactContainer = document.getElementById("dynamic-contact-links");
+  if (contactContainer) {
+    const items = [];
+    if (isRealValue(SITE_CONFIG.phone)) {
+      items.push(`<a class="btn btn-reset-filter" href="tel:${escapeHtml(SITE_CONFIG.phone)}">📞 ${escapeHtml(SITE_CONFIG.phone)}</a>`);
+    }
+    if (isRealValue(SITE_CONFIG.zaloLink)) {
+      items.push(`<a class="btn btn-reset-filter" href="${escapeHtml(SITE_CONFIG.zaloLink)}" target="_blank" rel="noopener">💬 Zalo tư vấn</a>`);
+    }
+    if (isRealValue(SITE_CONFIG.facebookLink)) {
+      items.push(`<a class="btn btn-reset-filter" href="${escapeHtml(SITE_CONFIG.facebookLink)}" target="_blank" rel="noopener">📘 Facebook</a>`);
+    }
+    if (isRealValue(SITE_CONFIG.youtubeLink)) {
+      items.push(`<a class="btn btn-reset-filter" href="${escapeHtml(SITE_CONFIG.youtubeLink)}" target="_blank" rel="noopener">▶️ YouTube Kênh Bếp</a>`);
+    }
+    if (isRealValue(SITE_CONFIG.email)) {
+      items.push(`<a class="btn btn-reset-filter" href="mailto:${escapeHtml(SITE_CONFIG.email)}">✉️ ${escapeHtml(SITE_CONFIG.email)}</a>`);
+    }
+    if (items.length > 0) {
+      contactContainer.innerHTML = items.join("");
+      contactContainer.style.display = "flex";
+    } else {
+      contactContainer.innerHTML = "";
+      contactContainer.style.display = "none";
+    }
+  }
+}
+
+// 9. CHẾ ĐỘ CỠ CHỮ LỚN (A / A+ / A++)
+function applyFontScale(scale) {
+  AppState.fontScale = scale;
+  const htmlEl = document.documentElement;
+  const btn = document.getElementById("btn-font-toggle");
+  if (scale === "lg") {
+    htmlEl.setAttribute("data-font-scale", "lg");
+    if (btn) btn.textContent = "A+ (Chữ vừa)";
+  } else if (scale === "xl") {
+    htmlEl.setAttribute("data-font-scale", "xl");
+    if (btn) btn.textContent = "A++ (Chữ to)";
+  } else {
+    htmlEl.removeAttribute("data-font-scale");
+    if (btn) btn.textContent = "A (Cỡ chuẩn)";
+  }
+  safeStorageSet("bep_a_dong_font_scale", scale);
+}
+
+function cycleFontScale() {
+  const order = ["normal", "lg", "xl"];
+  const next = order[(order.indexOf(AppState.fontScale) + 1) % order.length];
+  applyFontScale(next);
+  const labelMap = { normal: "Cỡ chữ tiêu chuẩn (100%)", lg: "Cỡ chữ lớn A+ (112%)", xl: "Cỡ chữ siêu lớn A++ (125%)" };
+  showToast("Đã chuyển sang: " + labelMap[next]);
+}
+
+// 10. BỘ LỌC ĐA ĐIỀU KIỆN & TÌM KIẾM KHÔNG DẤU TIẾNG VIỆT
+function getFilteredRecipes() {
+  const f = AppState.filters;
+  const queryNorm = removeVietnameseTones(f.search);
+
+  return AppState.recipes.filter((recipe) => {
+    const totalMinutes = (Number(recipe.prepTime) || 0) + (Number(recipe.cookTime) || 0);
+
+    if (f.onlyFavorites && !AppState.favorites.includes(recipe.id)) {
+      return false;
+    }
+    if (f.onlyVegetarian && !recipe.isVegetarian) {
+      return false;
+    }
+    if (f.country !== "all" && recipe.country !== f.country) {
+      return false;
+    }
+    if (f.category !== "all" && recipe.category !== f.category) {
+      return false;
+    }
+    if (f.difficulty !== "all" && recipe.difficulty !== f.difficulty) {
+      return false;
+    }
+    if (f.time === "under20" && totalMinutes > 20) {
+      return false;
+    }
+    if (f.time === "20to45" && (totalMinutes <= 20 || totalMinutes > 45)) {
+      return false;
+    }
+    if (f.time === "over45" && totalMinutes <= 45) {
+      return false;
+    }
+
+    if (queryNorm) {
+      const titleNorm = removeVietnameseTones(recipe.title);
+      const descNorm = removeVietnameseTones(recipe.description);
+      const countryNorm = removeVietnameseTones(recipe.country);
+      const ingNorm = (recipe.ingredients || [])
+        .map((i) => removeVietnameseTones(i.name))
+        .join(" ");
+      const haystack = `${titleNorm} ${descNorm} ${countryNorm} ${ingNorm}`;
+      const keywords = queryNorm.split(/[,\s]+/).filter(Boolean);
+      const allMatched = keywords.every((kw) => haystack.includes(kw));
+      if (!allMatched) return false;
+    }
+    return true;
+  });
+}
+
+function renderRecipeGrid() {
+  const gridEl = document.getElementById("recipe-grid-container");
+  const countEl = document.getElementById("filter-result-count");
+  const favBadgeEl = document.getElementById("fav-count-badge");
+  const favBtnHeader = document.getElementById("btn-fav-filter");
+
+  if (favBadgeEl) {
+    favBadgeEl.textContent = String(AppState.favorites.length);
+  }
+  if (favBtnHeader) {
+    favBtnHeader.classList.toggle("active", AppState.filters.onlyFavorites);
+  }
+
+  const filtered = getFilteredRecipes();
+  if (countEl) {
+    countEl.textContent = `Hiển thị ${filtered.length} / ${AppState.recipes.length} món ăn phù hợp`;
+  }
+
+  if (!gridEl) return;
+
+  if (filtered.length === 0) {
+    gridEl.innerHTML = `
+      <div class="empty-state" style="grid-column: 1 / -1;">
+        <h3 class="serif-heading" style="font-size:1.4rem;margin-bottom:0.5rem;">Không tìm thấy món ăn phù hợp với bộ lọc hiện tại</h3>
+        <p style="color:var(--color-text-muted);margin-bottom:1.25rem;">Hãy thử nhập nguyên liệu khác (VD: cá hồi, đậu phụ, thịt bò, tôm, kim chi) hoặc xóa bộ lọc để xem toàn bộ kho tàng món Á.</p>
+        <button type="button" class="btn btn-primary-cta" data-action="reset-filters">🔄 Xem tất cả ${AppState.recipes.length} món ăn</button>
+      </div>
+    `;
+    return;
+  }
+
+  gridEl.innerHTML = filtered.map((recipe) => {
+    const totalTime = (Number(recipe.prepTime) || 0) + (Number(recipe.cookTime) || 0);
+    const isFav = AppState.favorites.includes(recipe.id);
+    const safeTitle = escapeHtml(recipe.title);
+    const safeFlag = escapeHtml(recipe.flag || "🍲");
+
+    return `
+      <article class="recipe-card" data-recipe-id="${escapeHtml(recipe.id)}">
+        <div class="card-media">
+          <img
+            src="${escapeHtml(recipe.imageUrl)}"
+            alt="Món ${safeTitle} - Ẩm thực ${escapeHtml(recipe.country)}"
+            loading="lazy"
+            onerror="window.handleImageFallback(this, '${safeTitle}', '${safeFlag}')"
+          />
+          <div class="card-badges-top">
+            <span class="country-badge">${safeFlag} ${escapeHtml(recipe.country)}</span>
+            <button
+              type="button"
+              class="btn-fav-card ${isFav ? "active" : ""}"
+              data-action="toggle-favorite"
+              data-id="${escapeHtml(recipe.id)}"
+              aria-label="Lưu món yêu thích"
+              title="Lưu vào danh sách yêu thích"
+            >${isFav ? "❤️" : "🤍"}</button>
+          </div>
+          ${recipe.isVegetarian ? `<span class="veg-badge">🌱 Món Chay</span>` : ""}
+          <span class="photo-source-label">Ảnh minh họa: Unsplash</span>
+        </div>
+        <div class="card-body">
+          <div class="card-category-row">
+            <span class="category-tag">${escapeHtml(recipe.category)}</span>
+            <span class="source-status-tag">✓ ${escapeHtml(recipe.sourceStatus || "Công thức chuẩn")}</span>
+          </div>
+          <h3 class="card-title serif-heading">${safeTitle}</h3>
+          <p class="card-desc">${escapeHtml(recipe.description)}</p>
+          <div class="card-meta-grid">
+            <div class="meta-item">
+              <strong>⏱️ ${totalTime} phút</strong>
+              <span>Sơ chế ${recipe.prepTime}p</span>
+            </div>
+            <div class="meta-item">
+              <strong>🔥 ${escapeHtml(recipe.difficulty)}</strong>
+              <span>Độ khó</span>
+            </div>
+            <div class="meta-item">
+              <strong>🥗 ${recipe.calories} kcal</strong>
+              <span>/ 1 khẩu phần</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button
+              type="button"
+              class="btn btn-view-recipe"
+              data-action="open-recipe"
+              data-id="${escapeHtml(recipe.id)}"
+            >📖 Xem công thức</button>
+            <button
+              type="button"
+              class="btn btn-add-cart-card"
+              data-action="add-recipe-to-cart"
+              data-id="${escapeHtml(recipe.id)}"
+              title="Thêm toàn bộ nguyên liệu món này vào Giỏ đi chợ"
+            >+ Giỏ đi chợ</button>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
+function resetAllFilters() {
+  AppState.filters = {
+    search: "",
+    country: "all",
+    category: "all",
+    time: "all",
+    difficulty: "all",
+    onlyFavorites: false,
+    onlyVegetarian: false,
+    activeChip: ""
+  };
+  const searchInput = document.getElementById("hero-search-input");
+  if (searchInput) searchInput.value = "";
+  const countrySel = document.getElementById("filter-country");
+  if (countrySel) countrySel.value = "all";
+  const catSel = document.getElementById("filter-category");
+  if (catSel) catSel.value = "all";
+  const timeSel = document.getElementById("filter-time");
+  if (timeSel) timeSel.value = "all";
+  const diffSel = document.getElementById("filter-difficulty");
+  if (diffSel) diffSel.value = "all";
+
+  document.querySelectorAll(".quick-chip").forEach((chip) => chip.classList.remove("active"));
+  renderRecipeGrid();
+}
+
+// 11. MODAL CHI TIẾT CÔNG THỨC, QUY ĐỔI KHẨU PHẦN & HẸN GIỜ TỪNG BƯỚC
+function openRecipeModal(recipeId) {
+  const recipe = AppState.recipes.find((r) => r.id === recipeId);
+  if (!recipe) return;
+
+  AppState.activeRecipeId = recipe.id;
+  AppState.currentServings = Number(recipe.baseServings) || 4;
+  AppState.checkedHomeIngredients = {};
+  AppState.cookingModeStepIndex = 0;
+
+  renderRecipeModalContent();
+  const modal = document.getElementById("recipe-detail-modal");
+  if (modal) {
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+  }
+}
+
+function closeRecipeModal() {
+  const modal = document.getElementById("recipe-detail-modal");
+  if (modal) {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+  }
+}
+
+function renderRecipeModalContent() {
+  const recipe = AppState.recipes.find((r) => r.id === AppState.activeRecipeId);
+  const container = document.getElementById("recipe-modal-body");
+  const titleHeader = document.getElementById("modal-sticky-title");
+  if (!recipe || !container) return;
+
+  if (titleHeader) {
+    titleHeader.textContent = `${recipe.flag || "🍲"} ${recipe.title}`;
+  }
+
+  const ratio = AppState.currentServings / (Number(recipe.baseServings) || 4);
+  const totalTime = (Number(recipe.prepTime) || 0) + (Number(recipe.cookTime) || 0);
+  const safeTitle = escapeHtml(recipe.title);
+  const safeFlag = escapeHtml(recipe.flag || "🍲");
+
+  // Gom nhóm nguyên liệu
+  const groups = {};
+  (recipe.ingredients || []).forEach((ing, idx) => {
+    const gName = ing.group || "Nguyên liệu chuẩn bị";
+    if (!groups[gName]) groups[gName] = [];
+    groups[gName].push({ ...ing, index: idx });
+  });
+
+  const ingredientGroupsHtml = Object.keys(groups).map((gName) => {
+    const itemsHtml = groups[gName].map((ing) => {
+      const scaledAmount = formatQuantity(Number(ing.amount) * ratio);
+      const isChecked = Boolean(AppState.checkedHomeIngredients[ing.index]);
+      return `
+        <label class="ingredient-check-item ${isChecked ? "have-at-home" : ""}">
+          <span class="ingredient-check-left">
+            <input
+              type="checkbox"
+              data-action="toggle-home-ingredient"
+              data-index="${ing.index}"
+              ${isChecked ? "checked" : ""}
+            />
+            <span>${escapeHtml(ing.name)}</span>
+          </span>
+          <span class="ingredient-amount-badge">${scaledAmount} ${escapeHtml(ing.unit)}</span>
+        </label>
+      `;
+    }).join("");
+    return `
+      <div class="ingredient-group-block">
+        <div class="ingredient-group-title">${escapeHtml(gName)}</div>
+        ${itemsHtml}
+      </div>
+    `;
+  }).join("");
+
+  const stepsHtml = (recipe.steps || []).map((step) => {
+    const timerKey = `${recipe.id}-step-${step.stepNumber}`;
+    const timerMin = Number(step.timerMinutes) || 0;
+    const timerState = AppState.timers[timerKey];
+    const remainingSec = timerState ? timerState.remainingSeconds : timerMin * 60;
+    const isRunning = timerState ? timerState.running : false;
+
+    return `
+      <div class="step-card">
+        <div class="step-card-header">
+          <span class="step-title">${escapeHtml(step.title)}</span>
+          ${timerMin > 0 ? `<span style="font-size:0.85rem;color:var(--color-text-muted);">Thời gian gợi ý: ${timerMin} phút</span>` : ""}
+        </div>
+        <p>${escapeHtml(step.content)}</p>
+        ${timerMin > 0 ? `
+          <div class="timer-widget no-print" id="timer-widget-${escapeHtml(timerKey)}">
+            <span>⏱️ Hẹn giờ bước ${step.stepNumber}:</span>
+            <span class="timer-display" id="timer-display-${escapeHtml(timerKey)}">${formatSecondsMMSS(remainingSec)}</span>
+            <button
+              type="button"
+              class="btn btn-timer-start"
+              data-action="toggle-step-timer"
+              data-timer-key="${escapeHtml(timerKey)}"
+              data-minutes="${timerMin}"
+              data-step-title="${escapeHtml(step.title)}"
+            >${isRunning ? "⏸️ Tạm dừng" : "▶️ Bấm giờ " + timerMin + " phút"}</button>
+            <button
+              type="button"
+              class="btn btn-timer-reset"
+              data-action="reset-step-timer"
+              data-timer-key="${escapeHtml(timerKey)}"
+              data-minutes="${timerMin}"
+            >🔄 Đặt lại</button>
+          </div>
+        ` : ""}
+      </div>
+    `;
+  }).join("");
+
+  container.innerHTML = `
+    <div class="modal-hero-grid">
+      <div>
+        <img
+          class="modal-dish-img"
+          src="${escapeHtml(recipe.imageUrl)}"
+          alt="Ảnh chi tiết món ${safeTitle}"
+          onerror="window.handleImageFallback(this, '${safeTitle}', '${safeFlag}')"
+        />
+      </div>
+      <div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+          <span class="category-tag">${safeFlag} ${escapeHtml(recipe.country)} • ${escapeHtml(recipe.category)}</span>
+          <span class="source-status-tag">✓ ${escapeHtml(recipe.sourceStatus || "Công thức chuẩn truyền thống")}</span>
+        </div>
+        <h2 class="serif-heading" style="font-size:1.85rem;margin-bottom:0.6rem;">${safeTitle}</h2>
+        <p style="color:var(--color-text-muted);margin-bottom:1rem;">${escapeHtml(recipe.description)}</p>
+        <div class="card-meta-grid" style="margin-bottom:0.75rem;">
+          <div class="meta-item"><strong>${recipe.prepTime} phút</strong><span>Sơ chế</span></div>
+          <div class="meta-item"><strong>${recipe.cookTime} phút</strong><span>Chế biến nhiệt</span></div>
+          <div class="meta-item"><strong>${totalTime} phút (${escapeHtml(recipe.difficulty)})</strong><span>Tổng thời gian</span></div>
+        </div>
+        <div class="portion-scaler-box">
+          <div>
+            <strong style="display:block;color:var(--color-text);">⚖️ Quy đổi khẩu phần ăn</strong>
+            <span style="font-size:0.85rem;color:var(--color-text-muted);">Định lượng nguyên liệu tự động nhân/chia chính xác</span>
+          </div>
+          <div class="scaler-controls">
+            <button type="button" class="btn-scaler" data-action="scale-servings" data-delta="-1" aria-label="Giảm khẩu phần">−</button>
+            <span class="servings-value" id="modal-servings-count">${AppState.currentServings} người</span>
+            <button type="button" class="btn-scaler" data-action="scale-servings" data-delta="1" aria-label="Tăng khẩu phần">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-detail-columns">
+      <div>
+        <h3 class="serif-heading" style="font-size:1.35rem;margin-bottom:0.35rem;">🧺 Nguyên liệu (${AppState.currentServings} người ăn)</h3>
+        <p style="font-size:0.86rem;color:var(--color-text-muted);margin-bottom:0.75rem;">Đánh dấu ✅ vào nguyên liệu nhà bạn ĐÃ CÓ SẴN, sau đó bấm nút bên dưới để chuyển các mục còn thiếu vào Giỏ đi chợ.</p>
+        ${ingredientGroupsHtml}
+        <div class="no-print" style="margin-top:1.15rem;display:flex;flex-direction:column;gap:0.6rem;">
+          <button
+            type="button"
+            class="btn btn-primary-cta"
+            style="width:100%;"
+            data-action="add-missing-ingredients"
+          >🛒 Thêm các nguyên liệu còn thiếu vào Giỏ đi chợ</button>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="serif-heading" style="font-size:1.35rem;margin-bottom:0.85rem;">👩‍🍳 Quy trình chế biến từng bước</h3>
+        ${stepsHtml}
+        <div class="chef-tips-box">
+          <strong>💡 Bí quyết thành công & An toàn thực phẩm:</strong>
+          <p style="margin-top:0.35rem;font-size:0.95rem;">${escapeHtml(recipe.tips)}</p>
+        </div>
+        <div class="nutrition-box">
+          <strong>🌿 Giá trị dinh dưỡng (${recipe.calories} kcal / khẩu phần):</strong>
+          <p style="margin-top:0.35rem;font-size:0.95rem;">${escapeHtml(recipe.nutritionNote)}</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// 12. ĐỒNG HỒ ĐẾM NGƯỢC (COUNTDOWN TIMER)
+function formatSecondsMMSS(totalSec) {
+  const sec = Math.max(0, Math.floor(totalSec));
+  const m = String(Math.floor(sec / 60)).padStart(2, "0");
+  const s = String(sec % 60).padStart(2, "0");
+  return `${m}:${s}`;
+}
+
+function toggleStepTimer(timerKey, defaultMinutes, stepTitle) {
+  if (!AppState.timers[timerKey]) {
+    AppState.timers[timerKey] = {
+      remainingSeconds: defaultMinutes * 60,
+      defaultSeconds: defaultMinutes * 60,
+      running: false,
+      intervalId: null,
+      stepTitle: stepTitle || "Bước nấu ăn"
+    };
+  }
+  const t = AppState.timers[timerKey];
+
+  if (t.running) {
+    clearInterval(t.intervalId);
+    t.running = false;
+    updateTimerDom(timerKey);
+    showToast("Đã tạm dừng hẹn giờ: " + t.stepTitle);
+  } else {
+    if (t.remainingSeconds <= 0) {
+      t.remainingSeconds = t.defaultSeconds;
+    }
+    t.running = true;
+    // Khởi tạo AudioContext ngay khi người dùng chạm nút
+    try {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx && !AppState.audioCtx) {
+        AppState.audioCtx = new AudioCtx();
+      }
+    } catch (e) {}
+
+    t.intervalId = setInterval(() => {
+      t.remainingSeconds -= 1;
+      updateTimerDom(timerKey);
+      if (t.remainingSeconds <= 0) {
+        clearInterval(t.intervalId);
+        t.running = false;
+        updateTimerDom(timerKey);
+        playTimerAlarmSound();
+        showToast("⏰ HẾT GIỜ! Hoàn thành: " + t.stepTitle);
+      }
+    }, 1000);
+    updateTimerDom(timerKey);
+    showToast("▶️ Đang đếm ngược " + defaultMinutes + " phút cho: " + t.stepTitle);
+  }
+}
+
+function resetStepTimer(timerKey, defaultMinutes) {
+  const t = AppState.timers[timerKey];
+  if (t && t.intervalId) {
+    clearInterval(t.intervalId);
+  }
+  AppState.timers[timerKey] = {
+    remainingSeconds: defaultMinutes * 60,
+    defaultSeconds: defaultMinutes * 60,
+    running: false,
+    intervalId: null,
+    stepTitle: t ? t.stepTitle : ""
+  };
+  updateTimerDom(timerKey);
+}
+
+function updateTimerDom(timerKey) {
+  const t = AppState.timers[timerKey];
+  if (!t) return;
+  const displayEl = document.getElementById(`timer-display-${timerKey}`);
+  if (displayEl) {
+    displayEl.textContent = formatSecondsMMSS(t.remainingSeconds);
+  }
+  const cookingDisplayEl = document.getElementById(`cooking-timer-display-${timerKey}`);
+  if (cookingDisplayEl) {
+    cookingDisplayEl.textContent = formatSecondsMMSS(t.remainingSeconds);
+  }
+  document.querySelectorAll(`[data-timer-key="${timerKey}"][data-action="toggle-step-timer"]`).forEach((btn) => {
+    const mins = btn.getAttribute("data-minutes") || "";
+    btn.textContent = t.running ? "⏸️ Tạm dừng" : `▶️ Bấm giờ ${mins} phút`;
+  });
+}
+
+// 13. CHẾ ĐỘ VÀO BẾP TOÀN MÀN HÌNH (COOKING MODE)
+function openCookingMode() {
+  const recipe = AppState.recipes.find((r) => r.id === AppState.activeRecipeId);
+  if (!recipe) return;
+  AppState.cookingModeStepIndex = 0;
+  renderCookingModeStep();
+  const overlay = document.getElementById("cooking-mode-overlay");
+  if (overlay) {
+    overlay.classList.add("open");
+    overlay.setAttribute("aria-hidden", "false");
+  }
+}
+
+function closeCookingMode() {
+  const overlay = document.getElementById("cooking-mode-overlay");
+  if (overlay) {
+    overlay.classList.remove("open");
+    overlay.setAttribute("aria-hidden", "true");
+  }
+  renderRecipeModalContent();
+}
+
+function renderCookingModeStep() {
+  const recipe = AppState.recipes.find((r) => r.id === AppState.activeRecipeId);
+  if (!recipe) return;
+  const steps = recipe.steps || [];
+  const idx = Math.max(0, Math.min(AppState.cookingModeStepIndex, steps.length - 1));
+  const step = steps[idx];
+  const ratio = AppState.currentServings / (Number(recipe.baseServings) || 4);
+
+  const titleEl = document.getElementById("cooking-dish-title");
+  if (titleEl) {
+    titleEl.textContent = `${recipe.flag || "🍲"} ${recipe.title} (${AppState.currentServings} người)`;
+  }
+
+  const stageEl = document.getElementById("cooking-stage-content");
+  if (!stageEl || !step) return;
+
+  const timerKey = `${recipe.id}-step-${step.stepNumber}`;
+  const timerMin = Number(step.timerMinutes) || 0;
+  const timerState = AppState.timers[timerKey];
+  const remainingSec = timerState ? timerState.remainingSeconds : timerMin * 60;
+  const isRunning = timerState ? timerState.running : false;
+
+  const ingQuickHtml = (recipe.ingredients || []).map((ing) => {
+    const scaled = formatQuantity(Number(ing.amount) * ratio);
+    return `<span style="background:rgba(255,255,255,0.1);padding:0.3rem 0.7rem;border-radius:999px;font-size:0.95rem;">${escapeHtml(ing.name)}: <strong style="color:#FEF3C7;">${scaled} ${escapeHtml(ing.unit)}</strong></span>`;
+  }).join("");
+
+  stageEl.innerHTML = `
+    <div class="cooking-step-indicator">Bước ${idx + 1} / ${steps.length}</div>
+    <h3 class="cooking-step-heading serif-heading">${escapeHtml(step.title)}</h3>
+    <div class="cooking-step-body">${escapeHtml(step.content)}</div>
+
+    ${timerMin > 0 ? `
+      <div style="margin-top:1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;background:rgba(217,119,6,0.18);padding:1rem 1.25rem;border-radius:14px;border:1px solid #D97706;">
+        <span style="font-size:1.2rem;font-weight:700;color:#FEF3C7;">⏱️ Đồng hồ bước này:</span>
+        <span class="timer-display" id="cooking-timer-display-${escapeHtml(timerKey)}" style="color:#FFFFFF;font-size:1.75rem;">${formatSecondsMMSS(remainingSec)}</span>
+        <button
+          type="button"
+          class="btn btn-timer-start"
+          style="min-height:48px;font-size:1.05rem;padding:0 1.25rem;"
+          data-action="toggle-step-timer"
+          data-timer-key="${escapeHtml(timerKey)}"
+          data-minutes="${timerMin}"
+          data-step-title="${escapeHtml(step.title)}"
+        >${isRunning ? "⏸️ Tạm dừng" : "▶️ Bấm giờ " + timerMin + " phút"}</button>
+        <button
+          type="button"
+          class="btn btn-timer-reset"
+          style="min-height:48px;font-size:1rem;"
+          data-action="reset-step-timer"
+          data-timer-key="${escapeHtml(timerKey)}"
+          data-minutes="${timerMin}"
+        >🔄 Đặt lại</button>
+      </div>
+    ` : ""}
+
+    <div style="margin-top:1.5rem;">
+      <p style="font-size:0.95rem;color:#D97706;font-weight:700;margin-bottom:0.5rem;">🧺 Định lượng nguyên liệu nhanh (${AppState.currentServings} người):</p>
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">${ingQuickHtml}</div>
+    </div>
+  `;
+
+  const prevBtn = document.getElementById("btn-cooking-prev");
+  const nextBtn = document.getElementById("btn-cooking-next");
+  if (prevBtn) prevBtn.disabled = idx === 0;
+  if (nextBtn) {
+    nextBtn.textContent = idx === steps.length - 1 ? "🎉 Hoàn tất món ăn" : "Bước tiếp theo ➔";
+  }
+}
+
+// 14. GIỎ ĐI CHỢ THÔNG MINH (CỘNG DỒN ĐỊNH LƯỢNG & LƯU LOCALSTORAGE)
+function addIngredientsToCart(items, dishTitle) {
+  items.forEach((ing) => {
+    const keyName = removeVietnameseTones(ing.name);
+    const keyUnit = removeVietnameseTones(ing.unit);
+    const existing = AppState.cart.find(
+      (c) => removeVietnameseTones(c.name) === keyName && removeVietnameseTones(c.unit) === keyUnit
+    );
+    if (existing) {
+      existing.amount = Math.round((Number(existing.amount) + Number(ing.amount)) * 10) / 10;
+      if (dishTitle && !existing.dishes.includes(dishTitle)) {
+        existing.dishes.push(dishTitle);
+      }
+    } else {
+      AppState.cart.push({
+        id: "cart-" + Date.now() + "-" + Math.random().toString(36).slice(2, 7),
+        name: ing.name,
+        amount: Math.round(Number(ing.amount) * 10) / 10,
+        unit: ing.unit,
+        dishes: dishTitle ? [dishTitle] : ["Ghi chú riêng"],
+        checked: false
+      });
+    }
+  });
+  safeStorageSet("bep_a_dong_cart", AppState.cart);
+  renderShoppingCart();
+}
+
+function renderShoppingCart() {
+  const totalCount = AppState.cart.length;
+  document.querySelectorAll(".js-cart-count").forEach((el) => {
+    el.textContent = String(totalCount);
+  });
+
+  const containers = [
+    document.getElementById("cart-list-section"),
+    document.getElementById("cart-list-modal")
+  ];
+
+  const htmlContent = totalCount === 0
+    ? `<p style="text-align:center;color:var(--color-text-muted);padding:1.75rem 0.5rem;">Giỏ đi chợ đang trống. Hãy bấm <strong>"+ Giỏ đi chợ"</strong> trên thẻ món ăn hoặc thêm ghi chú nguyên liệu bên trên!</p>`
+    : AppState.cart.map((item) => {
+        const amtText = item.amount > 0 ? `${formatQuantity(item.amount)} ${escapeHtml(item.unit)}` : escapeHtml(item.unit || "");
+        const dishesNote = (item.dishes || []).join(", ");
+        return `
+          <div class="cart-item-row ${item.checked ? "checked" : ""}">
+            <label class="cart-item-label">
+              <input
+                type="checkbox"
+                data-action="toggle-cart-item"
+                data-id="${escapeHtml(item.id)}"
+                ${item.checked ? "checked" : ""}
+              />
+              <div>
+                <strong>${escapeHtml(item.name)}</strong>
+                ${amtText ? `<span style="color:var(--color-primary);font-weight:700;margin-left:0.4rem;">(${amtText})</span>` : ""}
+                <div style="font-size:0.78rem;color:var(--color-text-muted);">Món: ${escapeHtml(dishesNote)}</div>
+              </div>
+            </label>
+            <button
+              type="button"
+              class="btn btn-reset-filter"
+              style="min-height:36px;min-width:36px;padding:0 0.5rem;"
+              data-action="remove-cart-item"
+              data-id="${escapeHtml(item.id)}"
+              aria-label="Xóa mục này"
+            >✕</button>
+          </div>
+        `;
+      }).join("");
+
+  containers.forEach((box) => {
+    if (box) box.innerHTML = htmlContent;
+  });
+}
+
+function formatCartAsText() {
+  if (AppState.cart.length === 0) return "Giỏ đi chợ Bếp Á Đông đang trống.";
+  const lines = ["🛒 DANH SÁCH ĐI CHỢ - BẾP Á ĐÔNG:"];
+  AppState.cart.forEach((item, idx) => {
+    const status = item.checked ? "[Đã mua]" : "[Cần mua]";
+    const amt = item.amount > 0 ? `${formatQuantity(item.amount)} ${item.unit}` : "";
+    lines.push(`${idx + 1}. ${status} ${item.name} ${amt ? "- " + amt : ""} (${(item.dishes || []).join(", ")})`);
+  });
+  return lines.join("\n");
+}
+
+// 15. THỰC ĐƠN TUẦN TỰ ĐỘNG & QUY ĐỔI ĐƠN VỊ ĐO LƯỜNG
+function renderWeeklyPlanner() {
+  const container = document.getElementById("weekly-planner-list");
+  if (!container) return;
+  const days = ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ nhật"];
+
+  container.innerHTML = days.map((day) => {
+    const selectedId = AppState.weeklyPlan[day] || (AppState.recipes[0] && AppState.recipes[0].id);
+    const optionsHtml = AppState.recipes.map((r) => `
+      <option value="${escapeHtml(r.id)}" ${r.id === selectedId ? "selected" : ""}>
+        ${escapeHtml(r.flag || "🍲")} ${escapeHtml(r.title)} (${r.prepTime + r.cookTime}p)
+      </option>
+    `).join("");
+
+    return `
+      <div style="display:grid;grid-template-columns:95px 1fr auto;gap:0.5rem;align-items:center;padding:0.45rem 0;border-bottom:1px dashed var(--color-border);">
+        <strong style="color:var(--color-primary);">${day}</strong>
+        <select class="filter-select js-weekly-select" data-day="${day}" aria-label="Chọn món cho ${day}">
+          ${optionsHtml}
+        </select>
+        <button type="button" class="btn btn-reset-filter" data-action="open-recipe" data-id="${escapeHtml(selectedId)}" title="Xem công thức món này">Xem</button>
+      </div>
+    `;
+  }).join("");
+}
+
+function convertKitchenUnit() {
+  const amountInput = document.getElementById("converter-amount");
+  const typeSelect = document.getElementById("converter-type");
+  const resultEl = document.getElementById("converter-result");
+  if (!amountInput || !typeSelect || !resultEl) return;
+
+  const val = parseFloat(amountInput.value) || 0;
+  const mode = typeSelect.value;
+  let output = "";
+
+  if (mode === "tbsp_to_ml") {
+    output = `${formatQuantity(val)} muỗng canh (Tbsp) = ${formatQuantity(val * 15)} ml (khoảng ${formatQuantity(val * 3)} muỗng cà phê)`;
+  } else if (mode === "tsp_to_ml") {
+    output = `${formatQuantity(val)} muỗng cà phê (Tsp) = ${formatQuantity(val * 5)} ml`;
+  } else if (mode === "cup_to_ml") {
+    output = `${formatQuantity(val)} chén (Cup) = ${formatQuantity(val * 240)} ml (~ ${formatQuantity(val * 16)} muỗng canh)`;
+  } else if (mode === "lang_to_gram") {
+    output = `${formatQuantity(val)} lạng Việt Nam = ${formatQuantity(val * 100)} gram (g)`;
+  }
+  resultEl.textContent = output;
+}
+
+// 16. GỬI CÔNG THỨC CỦA BẠN & SAO LƯU / PHỤC HỒI JSON
+function handleUserRecipeSubmit(mode) {
+  const titleEl = document.getElementById("submit-dish-title");
+  const countryEl = document.getElementById("submit-dish-country");
+  const categoryEl = document.getElementById("submit-dish-category");
+  const timeEl = document.getElementById("submit-dish-time");
+  const authorEl = document.getElementById("submit-author-name");
+  const ingEl = document.getElementById("submit-dish-ingredients");
+  const stepsEl = document.getElementById("submit-dish-steps");
+
+  const title = titleEl ? titleEl.value.trim() : "";
+  const country = countryEl ? countryEl.value : "Việt Nam";
+  const category = categoryEl ? categoryEl.value : "Món kho/mặn";
+  const cookTime = parseInt(timeEl ? timeEl.value : "25", 10) || 25;
+  const sender = authorEl && authorEl.value.trim() ? authorEl.value.trim() : "Độc giả yêu bếp";
+  const rawIng = ingEl ? ingEl.value.trim() : "";
+  const rawSteps = stepsEl ? stepsEl.value.trim() : "";
+
+  if (!title || !rawIng || !rawSteps) {
+    showToast("⚠️ Vui lòng điền Tên món, Nguyên liệu và Cách làm trước khi thực hiện!");
+    return;
+  }
+
+  const flagMap = {
+    "Việt Nam": "🇻🇳",
+    "Nhật Bản": "🇯🇵",
+    "Hàn Quốc": "🇰🇷",
+    "Thái Lan": "🇹🇭",
+    "Trung Hoa": "🇨🇳"
+  };
+
+  if (mode === "save_local") {
+    const parsedIngredients = rawIng.split("\n").filter(Boolean).map((line) => ({
+      name: line.trim(),
+      amount: 1,
+      unit: "phần",
+      group: "Nguyên liệu do bạn thêm"
+    }));
+    const parsedSteps = rawSteps.split("\n").filter(Boolean).map((line, idx) => ({
+      stepNumber: idx + 1,
+      title: `Bước ${idx + 1}: Chế biến`,
+      content: line.trim(),
+      timerMinutes: 5
+    }));
+
+    const newRecipe = {
+      id: "custom-" + Date.now(),
+      title: title,
+      country: country,
+      flag: flagMap[country] || "🍲",
+      category: category,
+      isVegetarian: category.toLowerCase().includes("chay") || title.toLowerCase().includes("chay"),
+      prepTime: 10,
+      cookTime: cookTime,
+      difficulty: "Dễ",
+      calories: 320,
+      baseServings: 4,
+      imageUrl: createDishFallbackSvg(title, flagMap[country] || "🍲"),
+      sourceStatus: "Công thức từ " + sender,
+      description: `Công thức đóng góp bởi ${sender} lưu trực tiếp trên trình duyệt của bạn.`,
+      ingredients: parsedIngredients,
+      steps: parsedSteps,
+      tips: "Bạn có thể điều chỉnh gia vị tùy theo khẩu vị gia đình.",
+      nutritionNote: "Món ngon tự nấu tại nhà đảm bảo vệ sinh và dinh dưỡng."
+    };
+
+    AppState.customRecipes.unshift(newRecipe);
+    safeStorageSet("bep_a_dong_custom_recipes", AppState.customRecipes);
+    AppState.recipes.unshift(newRecipe);
+    renderRecipeGrid();
+    renderWeeklyPlanner();
+    showToast("🎉 Đã lưu món '" + title + "' vào kho công thức trên trình duyệt của bạn!");
+    if (titleEl) titleEl.value = "";
+    if (ingEl) ingEl.value = "";
+    if (stepsEl) stepsEl.value = "";
+  } else if (mode === "copy_or_email") {
+    const formatted = [
+      `[ĐÓNG GÓP CÔNG THỨC - BẾP Á ĐÔNG]`,
+      `- Tên món: ${title} (${country} - ${category})`,
+      `- Người gửi: ${sender}`,
+      `- Thời gian nấu: ${cookTime} phút`,
+      `--- NGUYÊN LIỆU ---`,
+      rawIng,
+      `--- CÁCH LÀM ---`,
+      rawSteps
+    ].join("\n");
+
+    if (isRealValue(SITE_CONFIG.email)) {
+      const subject = encodeURIComponent(`Gửi công thức mới: ${title} - từ ${sender}`);
+      const body = encodeURIComponent(formatted);
+      window.location.href = `mailto:${SITE_CONFIG.email}?subject=${subject}&body=${body}`;
+    } else {
+      copyTextToClipboard(formatted, "📋 Đã sao chép toàn bộ công thức! Bạn có thể dán gửi qua Zalo hoặc Email.");
+    }
+  }
+}
+
+function exportBackupJson() {
+  const payload = {
+    exportedAt: new Date().toISOString(),
+    favorites: AppState.favorites,
+    cart: AppState.cart,
+    customRecipes: AppState.customRecipes,
+    weeklyPlan: AppState.weeklyPlan
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "bep-a-dong-backup.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast("💾 Đã tải xuống file sao lưu JSON thành công!");
+}
+
+function importBackupJson(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    try {
+      const data = JSON.parse(String(ev.target.result || "{}"));
+      if (Array.isArray(data.favorites)) {
+        AppState.favorites = data.favorites;
+        safeStorageSet("bep_a_dong_favorites", AppState.favorites);
+      }
+      if (Array.isArray(data.cart)) {
+        AppState.cart = data.cart;
+        safeStorageSet("bep_a_dong_cart", AppState.cart);
+      }
+      if (Array.isArray(data.customRecipes)) {
+        AppState.customRecipes = data.customRecipes;
+        safeStorageSet("bep_a_dong_custom_recipes", AppState.customRecipes);
+        AppState.recipes = [...AppState.customRecipes, ...FALLBACK_RECIPES];
+      }
+      if (data.weeklyPlan && typeof data.weeklyPlan === "object") {
+        AppState.weeklyPlan = data.weeklyPlan;
+        safeStorageSet("bep_a_dong_weekly_plan", AppState.weeklyPlan);
+      }
+      renderRecipeGrid();
+      renderShoppingCart();
+      renderWeeklyPlanner();
+      showToast("✅ Đã khôi phục dữ liệu từ file JSON thành công!");
+    } catch (err) {
+      showToast("⚠️ File JSON không hợp lệ, vui lòng kiểm tra lại.");
+    }
+  };
+  reader.readAsText(file);
+}
+
+// 17. GẮN KẾT SỰ KIỆN TOÀN CỤC (EVENT DELEGATION)
+function setupEventListeners() {
+  // Tìm kiếm tức thì (Real-time search)
+  const searchInput = document.getElementById("hero-search-input");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      AppState.filters.search = e.target.value;
+      renderRecipeGrid();
+    });
+  }
+
+  // Các bộ lọc Select
+  const filterBindings = [
+    { id: "filter-country", key: "country" },
+    { id: "filter-category", key: "category" },
+    { id: "filter-time", key: "time" },
+    { id: "filter-difficulty", key: "difficulty" }
+  ];
+  filterBindings.forEach(({ id, key }) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("change", (e) => {
+        AppState.filters[key] = e.target.value;
+        renderRecipeGrid();
+      });
+    }
+  });
+
+  // Bộ chuyển đổi đơn vị nhà bếp tức thì
+  const convAmt = document.getElementById("converter-amount");
+  const convType = document.getElementById("converter-type");
+  if (convAmt) convAmt.addEventListener("input", convertKitchenUnit);
+  if (convType) convType.addEventListener("change", convertKitchenUnit);
+
+  // Thay đổi món trong thực đơn tuần
+  document.addEventListener("change", (e) => {
+    const target = e.target;
+    if (target && target.classList && target.classList.contains("js-weekly-select")) {
+      const day = target.getAttribute("data-day");
+      if (day) {
+        AppState.weeklyPlan[day] = target.value;
+        safeStorageSet("bep_a_dong_weekly_plan", AppState.weeklyPlan);
+        renderWeeklyPlanner();
+        showToast("Đã cập nhật món ăn cho " + day);
+      }
+    }
+    if (target && target.id === "import-json-input" && target.files && target.files[0]) {
+      importBackupJson(target.files[0]);
+      target.value = "";
+    }
+  });
+
+  // Event Delegation cho toàn bộ nút bấm (buttons & links)
+  document.addEventListener("click", (e) => {
+    const control = e.target.closest("button, a");
+    if (!control) return;
+
+    const action = control.getAttribute("data-action");
+    if (!action) return;
+
+    if (action === "toggle-mobile-nav") {
+      const nav = document.getElementById("main-navigation");
+      if (nav) nav.classList.toggle("open");
+    } else if (action === "cycle-font-scale") {
+      cycleFontScale();
+    } else if (action === "toggle-fav-filter") {
+      AppState.filters.onlyFavorites = !AppState.filters.onlyFavorites;
+      renderRecipeGrid();
+      const sec = document.getElementById("recipes-section");
+      if (sec) sec.scrollIntoView({ behavior: "smooth" });
+    } else if (action === "clear-search") {
+      const inp = document.getElementById("hero-search-input");
+      if (inp) inp.value = "";
+      AppState.filters.search = "";
+      renderRecipeGrid();
+    } else if (action === "scroll-to-recipes") {
+      const sec = document.getElementById("recipes-section");
+      if (sec) sec.scrollIntoView({ behavior: "smooth" });
+    } else if (action === "quick-chip") {
+      const chipType = control.getAttribute("data-chip");
+      resetAllFilters();
+      control.classList.add("active");
+      if (chipType === "under20") {
+        AppState.filters.time = "under20";
+        const sel = document.getElementById("filter-time");
+        if (sel) sel.value = "under20";
+      } else if (chipType === "vegetarian") {
+        AppState.filters.onlyVegetarian = true;
+      } else if (chipType) {
+        AppState.filters.country = chipType;
+        const sel = document.getElementById("filter-country");
+        if (sel) sel.value = chipType;
+      }
+      renderRecipeGrid();
+      const sec = document.getElementById("recipes-section");
+      if (sec) sec.scrollIntoView({ behavior: "smooth" });
+    } else if (action === "reset-filters") {
+      resetAllFilters();
+      showToast("Đã đặt lại toàn bộ bộ lọc món ăn.");
+    } else if (action === "toggle-favorite") {
+      const id = control.getAttribute("data-id");
+      if (!id) return;
+      const idx = AppState.favorites.indexOf(id);
+      if (idx >= 0) {
+        AppState.favorites.splice(idx, 1);
+        showToast("Đã bỏ món khỏi danh sách Yêu thích.");
+      } else {
+        AppState.favorites.push(id);
+        showToast("❤️ Đã lưu vào danh sách Món Yêu Thích!");
+      }
+      safeStorageSet("bep_a_dong_favorites", AppState.favorites);
+      renderRecipeGrid();
+    } else if (action === "open-recipe") {
+      const id = control.getAttribute("data-id");
+      if (id) openRecipeModal(id);
+    } else if (action === "close-recipe-modal") {
+      closeRecipeModal();
+    } else if (action === "add-recipe-to-cart") {
+      const id = control.getAttribute("data-id");
+      const recipe = AppState.recipes.find((r) => r.id === id);
+      if (recipe) {
+        addIngredientsToCart(recipe.ingredients || [], recipe.title);
+        showToast(`🛒 Đã thêm nguyên liệu món "${recipe.title}" vào Giỏ đi chợ!`);
+      }
+    } else if (action === "scale-servings") {
+      const delta = parseInt(control.getAttribute("data-delta") || "0", 10);
+      const nextVal = Math.max(1, Math.min(10, AppState.currentServings + delta));
+      AppState.currentServings = nextVal;
+      renderRecipeModalContent();
+    } else if (action === "toggle-home-ingredient") {
+      const idx = control.getAttribute("data-index");
+      if (idx !== null) {
+        AppState.checkedHomeIngredients[idx] = control.checked;
+        renderRecipeModalContent();
+      }
+    } else if (action === "add-missing-ingredients") {
+      const recipe = AppState.recipes.find((r) => r.id === AppState.activeRecipeId);
+      if (!recipe) return;
+      const ratio = AppState.currentServings / (Number(recipe.baseServings) || 4);
+      const missing = (recipe.ingredients || [])
+        .filter((_, idx) => !AppState.checkedHomeIngredients[idx])
+        .map((ing) => ({
+          name: ing.name,
+          amount: Number(ing.amount) * ratio,
+          unit: ing.unit
+        }));
+      if (missing.length === 0) {
+        showToast("🎉 Nhà bạn đã có đủ 100% nguyên liệu cho món này!");
+      } else {
+        addIngredientsToCart(missing, `${recipe.title} (${AppState.currentServings} người)`);
+        showToast(`🛒 Đã thêm ${missing.length} nguyên liệu còn thiếu vào Giỏ đi chợ!`);
+      }
+    } else if (action === "toggle-step-timer") {
+      const key = control.getAttribute("data-timer-key");
+      const mins = parseInt(control.getAttribute("data-minutes") || "5", 10);
+      const title = control.getAttribute("data-step-title") || "";
+      if (key) toggleStepTimer(key, mins, title);
+    } else if (action === "reset-step-timer") {
+      const key = control.getAttribute("data-timer-key");
+      const mins = parseInt(control.getAttribute("data-minutes") || "5", 10);
+      if (key) resetStepTimer(key, mins);
+    } else if (action === "open-cooking-mode") {
+      openCookingMode();
+    } else if (action === "close-cooking-mode") {
+      closeCookingMode();
+    } else if (action === "cooking-prev-step") {
+      if (AppState.cookingModeStepIndex > 0) {
+        AppState.cookingModeStepIndex -= 1;
+        renderCookingModeStep();
+      }
+    } else if (action === "cooking-next-step") {
+      const recipe = AppState.recipes.find((r) => r.id === AppState.activeRecipeId);
+      if (!recipe) return;
+      if (AppState.cookingModeStepIndex < recipe.steps.length - 1) {
+        AppState.cookingModeStepIndex += 1;
+        renderCookingModeStep();
+      } else {
+        closeCookingMode();
+        showToast("🎉 Chúc mừng bạn đã hoàn thành món " + recipe.title + "!");
+      }
+    } else if (action === "print-recipe") {
+      window.print();
+    } else if (action === "open-cart-modal") {
+      const modal = document.getElementById("cart-drawer-modal");
+      if (modal) {
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+      }
+    } else if (action === "close-cart-modal") {
+      const modal = document.getElementById("cart-drawer-modal");
+      if (modal) {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+      }
+    } else if (action === "add-custom-cart-item") {
+      const targetId = control.getAttribute("data-input-id") || "custom-cart-input";
+      const inp = document.getElementById(targetId);
+      if (!inp || !inp.value.trim()) {
+        showToast("Vui lòng nhập tên nguyên liệu hoặc ghi chú cần mua.");
+        return;
+      }
+      addIngredientsToCart([{ name: inp.value.trim(), amount: 0, unit: "Ghi chú" }], "Mua thêm");
+      inp.value = "";
+      showToast("✅ Đã thêm vào Giỏ đi chợ!");
+    } else if (action === "toggle-cart-item") {
+      const id = control.getAttribute("data-id");
+      const item = AppState.cart.find((c) => c.id === id);
+      if (item) {
+        item.checked = !item.checked;
+        safeStorageSet("bep_a_dong_cart", AppState.cart);
+        renderShoppingCart();
+      }
+    } else if (action === "remove-cart-item") {
+      const id = control.getAttribute("data-id");
+      AppState.cart = AppState.cart.filter((c) => c.id !== id);
+      safeStorageSet("bep_a_dong_cart", AppState.cart);
+      renderShoppingCart();
+    } else if (action === "clear-checked-cart") {
+      AppState.cart = AppState.cart.filter((c) => !c.checked);
+      safeStorageSet("bep_a_dong_cart", AppState.cart);
+      renderShoppingCart();
+      showToast("Đã xóa các mục đã mua khỏi Giỏ đi chợ.");
+    } else if (action === "clear-all-cart") {
+      AppState.cart = [];
+      safeStorageSet("bep_a_dong_cart", AppState.cart);
+      renderShoppingCart();
+      showToast("Đã làm trống Giỏ đi chợ.");
+    } else if (action === "copy-cart-list") {
+      copyTextToClipboard(formatCartAsText(), "📋 Đã sao chép danh sách đi chợ! Sẵn sàng dán vào Zalo/Tin nhắn.");
+    } else if (action === "add-weekly-plan-to-cart") {
+      Object.values(AppState.weeklyPlan).forEach((rId) => {
+        const recipe = AppState.recipes.find((r) => r.id === rId);
+        if (recipe) {
+          addIngredientsToCart(recipe.ingredients || [], recipe.title);
+        }
+      });
+      showToast("🛒 Đã tổng hợp nguyên liệu cả tuần vào Giỏ đi chợ!");
+    } else if (action === "test-alarm-sound") {
+      playTimerAlarmSound();
+      showToast("🔔 Chuông báo hẹn giờ bếp hoạt động tốt!");
+    } else if (action === "submit-recipe-local") {
+      handleUserRecipeSubmit("save_local");
+    } else if (action === "submit-recipe-share") {
+      handleUserRecipeSubmit("copy_or_email");
+    } else if (action === "export-backup-json") {
+      exportBackupJson();
+    } else if (action === "trigger-import-json") {
+      const fileInp = document.getElementById("import-json-input");
+      if (fileInp) fileInp.click();
+    }
+  });
+
+  // Đóng modal khi bấm vào vùng nền tối bên ngoài hoặc phím Escape
+  document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+    backdrop.addEventListener("click", (e) => {
+      if (e.target === backdrop) {
+        backdrop.classList.remove("open");
+        backdrop.setAttribute("aria-hidden", "true");
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeCookingMode();
+      closeRecipeModal();
+      const cartModal = document.getElementById("cart-drawer-modal");
+      if (cartModal) cartModal.classList.remove("open");
+    }
+  });
+}
+
+// 18. KHỞI CHẠY ỨNG DỤNG
+async function initAsianCulinaryHub() {
+  renderBrandAndContacts();
+  await loadRecipesData();
+  renderRecipeGrid();
+  renderShoppingCart();
+  renderWeeklyPlanner();
+  convertKitchenUnit();
+  setupEventListeners();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initAsianCulinaryHub);
+} else {
+  initAsianCulinaryHub();
+}
+
+</script>
+</body>
+</html>
